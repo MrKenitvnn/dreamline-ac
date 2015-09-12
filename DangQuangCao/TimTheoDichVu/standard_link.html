@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="get_ad_by_default.css">
+	<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+</head>
+<body>
+<br/>
+			
+	<!-- link nav-->
+	<div class="clear frame sbs-link-header">
+		<div class="sbs-link-nav">
+			<div>
+				<img src="images/img_link_banner_self.png">
+				<a>Liên kết</a>
+				<div class="sbs-link-navbg"></div>				
+			</div>
+		</div>
+		<div class="standard-nav-target">
+			<ul>
+				<li><a href="#" class="on">LINK BANNER CHUẨN</a></li>
+				<li><a href="#">LINK THƯỜNG</a></li>
+				<li><a href="#">LINK CƠ BẢN</a></li>
+			</ul>
+			<p class="clear">Là banner quảng cáo dạng flash hoặc hình ảnh có kích thước 		tiêu chuẩn được cung cấp bởi Adpia. Tự động cập nhật mỗi khi 	Merchant thay đổi</p>
+		</div>
+	</div>
+
+	<!-- link search  -->
+	<div class="clear frame sbs-link-search">
+		<form action="#" accept-charset="utf-8" name="searchForm" method="post">
+			<div class="sbm-custom-select">
+	            <select name="orderby" class="sbm-select">
+	                <option value="0" selected="selected">Hoa hồng</option>
+	                <option value="1">Tên Merchant</option>
+	            </select>
+	        </div>
+			<div class="standard-nav-tg-rad">
+	      	  	<input type="radio" name="subs_status" value="ALL" id="ALL" 
+	            checked="checked" onclick="search_submit()" />
+	            <label for="ALL"><span></span>Tất cả trạng thái liên kết</label>
+
+				<input type="radio" name="subs_status" value="APR" id="APR"  onclick="search_submit()" />
+	            <label for="APR" ><span></span>Merchant đã liên kết</label>
+	      	</div>
+
+	       	<input type="text" placeholder="Tìm kiếm" name="search_keyword" size="20" value=""  onFocus="check_keyword(this.form)" />
+	       	<input type="image" src="images/icon_search_blue.png" onclick="this.form.submit()" />
+       	</form>
+	</div>
+
+	<!-- link content-->
+	<div class="clear frame sbm-search-result tbl-standard-link">		
+		<table>
+			<thead>
+				<td>Merchant/Category</td>
+				<td>Hoa Hồng   </td>
+				<td>120<br/>30</td>
+				<td>360<br/>100</td>
+				<td>720<br/>90</td>
+				<td>120<br/>60</td>
+				<td>250<br/>250</td>
+				<td>350<br/>250</td>
+				<td>350<br/>600</td>
+				<td>728<br/>90</td>
+				<td>468<br/>90</td>
+				<td>Công Nhận</td>
+				<td>Trạng thái đăng nhập</td>
+			</thead>
+			<tbody>
+				<td>
+					<a href="" id="merchant-item-name">Yes24 Viet Nam</a><br/>
+                    <span id="merchant-item-category">[  Thẩm mỹ viện/Làm đẹp  ]</span>
+				</td>
+				<td class="td-hoahong">
+					<span id="merchant-item-percent">200.000 ~ 900.000</span><br/>
+                    <span id="merchant-item-type">CPA</span>
+				</td>
+				<td><div class="link-state link-ok"></div></td>
+				<td><div class="link-state link-ok"></div></td>
+				<td><div class="link-state link-ok"></div></td>
+				<td><div class="link-state link-not"></div></td>
+				<td><div class="link-state link-ok"></div></td>
+				<td><div class="link-state link-not"></div></td>
+				<td><div class="link-state link-ok"></div></td>
+				<td><div class="link-state link-ok"></div></td>
+				<td><div class="link-state link-not"></div></td>
+				<td>
+					<span>THỦ CÔNG</span><br/>
+					<a href="#" class="btn-tao-tag">TẠO TAG</a>
+				</td>
+				<td class="td-tt-dangnhap">					
+                    <a href="#"> <img src="images/icon_connected.png" alt="" /></a><br/>
+                    <span style="width:150px;float:left;">Linh banner chuẩn</span>
+				</td>
+			</tbody>
+
+		</table>
+	</div>
+</body>
+</html>
