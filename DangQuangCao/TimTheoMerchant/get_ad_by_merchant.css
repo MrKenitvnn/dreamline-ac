@@ -1,0 +1,101 @@
+@import url('../../main.css');
+
+
+/**
+ * Quan ly merchant lien ket
+ **/
+ .sbm-manage-filter-box{
+ 	width: 1050px;
+ 	height: 640px;
+ 	background: #f0f0f0;
+ 	padding: 30px 35px;
+ }
+ .sbm-manage-filter-box p{
+ 	font-size: 17px;
+ }
+ .sbm-manage-filter-box hr{
+    border-top: 1px solid #e2e2e2;
+    border-bottom: 1px solid #FFF;
+ 	width: 100%;
+ }
+.sbm-manage-filter-box span{
+	clear:both;
+	line-height: 30px;
+	font-size: 18px;
+}
+.sbm-manage-filter-box .custom-select-box{
+	float: left;
+	margin-left: 15px;
+}
+.sbm-manage-filter-box input[type="submit"]{
+	float: right;
+}
+.sbm-filter-obj{
+	width: 340px;
+	height: 300px;
+	float: left;
+	margin-top: 20px;
+}
+.sbm-filter-obj textarea{
+	width: 203px;
+	height: 223px;
+	margin: 30px;
+}
+.sbm-filter-value{
+	margin-top: 20px;
+	width: 700px;
+	height: 300px;
+	float: right;
+}
+.sbm-filter-value span{
+	float: left;
+}
+.sbm-filter-value label span{
+	border: 1px solid #cbcbcb;
+}
+.sbm-filter-value label{
+	margin-top: 15px;
+	float: left;
+	min-width: 200px;
+}
+.sbm-filter-value .lb-checkbox:first-child{
+	margin-top: 0px !important;
+}
+.view-result{
+	width: 205px;
+	height: 45px;
+	text-align: center;
+	line-height: 45px;
+	font-size: 18px;
+	color: #FFF;
+	background: #2baef1;
+	border-radius: 30px;
+	-webkit-box-shadow: 0px 2px 3px #ededed;
+    -moz-box-shadow: 0px 2px 1px #ededed;
+    box-shadow: 0px 2px 3px #ededed;
+    margin-left: 30%;
+    float: left;
+    position: relative;
+    top: 20px;
+}
+.save-by-excel{
+	margin-left: 45px;
+	background: #1e7145;
+	line-height:30px;
+}
+.save-by-excel img{
+	position: relative;
+	top:6px;
+}
+.save-by-excel span{
+	color: #FFF;
+	line-height: 45px;
+}
+.sbm-tbl-manage{
+	margin-top: 30px;
+}
+.sbm-tbl-manage a{
+	color: #2baef1;
+	font-size: 18px;
+	line-height: 50px;
+}

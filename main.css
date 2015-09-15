@@ -22,6 +22,9 @@ body{
 a, p, span, h2,label{
     font-family: "Open Sans", sans-serif;
 }
+p{
+    color: #555555;
+}
 
 ::-webkit-input-placeholder {
     color: #FFF;
@@ -1368,7 +1371,7 @@ footer h2{
     margin-top:30px;
     height:208px;
     border: 1px solid #dcdcdc;
-    background: url('/images/dev/bg_box_search_more.png');
+    background: url('images/dev/bg_box_search_more.png');
     display:none;
 }
 .sbm-box-select{
@@ -1376,16 +1379,15 @@ footer h2{
     height:100%;
     float:left;
 }
-.sbm-custom-select{
+.custom-select-box{
     width:265px;
     height:44px;
-    background: url('/images/dev/bg_custom_select_box.png');
-    float:left;
+    background: url('images/dev/bg_custom_select_box.png') !important;
 }
-.sbm-custom-select:nth-child(3),.sbm-custom-select:nth-child(4){
+.custom-select-box:nth-child(3),.custom-select-box:nth-child(4){
     margin-top:45px;
 }
-.sbm-custom-select select{
+.custom-select-box select{
     width:260px;
     height:40px;
     background: transparent;
@@ -1691,7 +1693,7 @@ td #merchant-item-percent{
     margin-left: 50px;
     margin-right: 50px;
 }
-.sbm-info-mer-new-1 .sbm-custom-select{
+.sbm-info-mer-new-1 .custom-select-box{
     margin-top:15px !important;
 }
 .sbm-info-mer-new-1 p,.sbm-info-mer-new-2 p{
@@ -1720,7 +1722,6 @@ td #merchant-item-percent{
     line-height:100px;
 }
 .sbm-info-mer-new-2 input[type="submit"]{
-    background: #2baef1;
     width:145px;
     height:40px;
     border:none;
@@ -1729,6 +1730,20 @@ td #merchant-item-percent{
     border-radius: 20px 20px 20px 20px;
 }
 
+.btn-copy-link{
+    width:65px;
+    height:31px;
+    line-height:28px;
+    background:#f0f0f0;
+    border:1px solid #d8d8d8;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow:0px 2px 3px #545454;
+    float:left;
+    position:relative;
+    left:-20px;
+    top:-2px;
+    cursor: pointer;
+}
 
 /**
  * merchant bi loi
@@ -1736,13 +1751,9 @@ td #merchant-item-percent{
 
 
 
-
-
 /**
  * FIX clean code
- *
  **/
-
 hr{
     height:0px;
     display: block; 
@@ -1756,7 +1767,7 @@ hr{
     position: relative;
     left:55px;
 }
-input[type="submit"]{
+input[type="submit"], a.custom-button{
     width:165px;
     height:45px;
     color: #FFF;
@@ -1771,5 +1782,75 @@ input[type="submit"]{
     text-align: center;
     width: 100%;
  }
+
+ /** custom radio **/
+input[type="radio"] {
+    display:none;
+}
+label span {
+    display:inline-block;
+    width:16px;
+    height:16px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    cursor:pointer;
+    -moz-border-radius:  50%;
+    border-radius:  50%;
+    color: #2baef1;
+    font-family:Arial, sans-serif;
+    font-size:14px; 
+}
+input[type="radio"] + label span {
+     background-color:#FFF;
+     border:1px solid #d5d5d5;
+}
+
+input[type="radio"]:checked + label span{
+     background-color:#2baef1;
+     border: 1px solid #2baef1;
+}
+input[type="radio"] + label span,
+input[type="radio"]:checked + label span {
+  -webkit-transition:background-color 0.4s linear;
+  -o-transition:background-color 0.4s linear;
+  -moz-transition:background-color 0.4s linear;
+  transition:background-color 0.4s linear;
+}
+ /** end custom radio **/
+
+/**
+ * custom checkbox
+ **/
+ input[type=checkbox]{
+    display: none;
+}
+.lb-checkbox{
+    vertical-align:text-bottom;
+}
+.lb-checkbox span{    
+    width:16px;
+    height:16px;
+    margin:-1px 4px 0 0;
+    border-radius: 0px !important;
+    display:inline-block;
+    vertical-align:middle;
+    cursor:pointer;
+    color: #2baef1;
+    font-family:Arial, sans-serif;
+    font-size:14px; 
+    background: #FFF;
+}
+input[type="checkbox"]:checked + label span{
+    background-color:#2baef1;
+}
+input[type="checkbox"] + label span,
+input[type="checkbox"]:checked + label span {
+  -webkit-transition:background-color 0.4s linear;
+  -o-transition:background-color 0.4s linear;
+  -moz-transition:background-color 0.4s linear;
+  transition:background-color 0.4s linear;
+}
+/** end custom checkbox **/
+
 
  /******************************/

@@ -247,6 +247,7 @@
 }
 .sbs-link-search .sbm-custom-select{
     margin: 0px;
+    float: left;
 }
 .sbs-link-search .standard-nav-tg-rad{
     margin-left:80px;
@@ -260,40 +261,6 @@
 .standard-nav-tg-rad label:last-child{
     margin-left: 50px;
 }
- /** custom radio **/
-input[type="radio"] {
-    display:none;
-}
-label span {
-    display:inline-block;
-    width:16px;
-    height:16px;
-    margin:-1px 4px 0 0;
-    vertical-align:middle;
-    cursor:pointer;
-    -moz-border-radius:  50%;
-    border-radius:  50%;
-    color: #2baef1;
-    font-family:Arial, sans-serif;
-    font-size:14px; 
-}
-input[type="radio"] + label span {
-     background-color:#FFF;
-     border:1px solid #d5d5d5;
-}
-
-input[type="radio"]:checked + label span{
-     background-color:#2baef1;
-     border: 1px solid #2baef1;
-}
-input[type="radio"] + label span,
-input[type="radio"]:checked + label span {
-  -webkit-transition:background-color 0.4s linear;
-  -o-transition:background-color 0.4s linear;
-  -moz-transition:background-color 0.4s linear;
-  transition:background-color 0.4s linear;
-}
- /** end custom radio **/
 
 .sbs-link-search input{
     float:right;
@@ -532,7 +499,7 @@ td .btn-tao-tag{
     margin: 40px auto;
 }
 .sbs-self-filter>div{
-    width: 310px;
+    width: 300px;
     padding:20px 30px;
     float: left;
 }
@@ -565,11 +532,18 @@ td .btn-tao-tag{
     
 }
 .sbs-self-filter-2{
-    width: 358px;
+    width: 360px !important;
     background: #dddddd;
     height: 453px;
     border-left:1px solid #FFF;
     border-right:1px solid #FFF;
+    padding-right: 0px !important;
+}
+.sbs-self-filter-2 hr{
+    width:325px;
+}
+.sbs-self-filter-2 textarea{
+    width: 320px;
 }
 .sbs-self-filter-3{
     
@@ -586,21 +560,38 @@ td .btn-tao-tag{
     margin:0px 10px;
     cursor: pointer;
     margin:0px 20px;
-    position: relative;
-    top:-5px;
 }
 .sbs-self-tag-title hr{
     width:490px;
     border-top:1px solid #e1e1e1;
     float:left;
+    position: relative;
+    top:5px;
 }
 .sbs-self-tag-title hr:last-child{
     float: right;
 }
+.sbs-self-tag-copy textarea{
+    height:105px;
+    background: #eeeeee;
+    border-radius: 0px;
+}
+.sbs-self-copy-title hr{
+    top:12px;
+    width: 470px;
+}
+.sbs-self-copy-title img{
+    margin-left: 30px;
+}
 
 
-
-
+/******* design without selectbox**********/
+.sbs-filter-by{
+    display: none;
+}
+#sbs-filter-by1-text{
+    display: block;
+}
 
 /**
  * link banner self
@@ -609,39 +600,6 @@ td .btn-tao-tag{
 
 
 
-/**
- * custom checkbox
- **/
- input[type=checkbox]{
-    display: none;
-}
-.lb-checkbox{
-    vertical-align:text-bottom;
-}
-.lb-checkbox span{    
-    width:16px;
-    height:16px;
-    margin:-1px 4px 0 0;
-    border-radius: 0px !important;
-    display:inline-block;
-    vertical-align:middle;
-    cursor:pointer;
-    color: #2baef1;
-    font-family:Arial, sans-serif;
-    font-size:14px; 
-    background: #FFF;
-}
-input[type="checkbox"]:checked + label span{
-    background-color:#2baef1;
-}
-input[type="checkbox"] + label span,
-input[type="checkbox"]:checked + label span {
-  -webkit-transition:background-color 0.4s linear;
-  -o-transition:background-color 0.4s linear;
-  -moz-transition:background-color 0.4s linear;
-  transition:background-color 0.4s linear;
-}
-/** end custom checkbox **/
 textarea {
     width: 300px;
     height: 50px;

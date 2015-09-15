@@ -59,11 +59,11 @@
 			</table>
 
 			<span class="sbs-self-filter-title">Loại đường dẫn</span><br/><hr/><br/><br/>
-			<div class="sbm-custom-select">
-	            <select name="orderby" class="sbm-select">
-	                <option value="0" selected="selected">Đường dẫn</option>
-	                <option value="1">Hình ảnh</option>
-	                <option value="1">Text</option>
+			<div class="custom-select-box">
+	            <select name="link_type" class="sbm-select">
+	                <option value="url" selected="selected">Đường dẫn</option>
+	                <option value="image">Hình ảnh</option>
+	                <option value="text">Text</option>
 	            </select>
 	        </div>
 		</div>
@@ -76,27 +76,40 @@
 				<span class="sbs-self-filter-title">Thay đổi địa chỉ</span><br/><hr/><br/><br/><br/>
 				<input type="checkbox" name="checkboxG4" id="checkboxG4" class="css-checkbox" /><label for="checkboxG4" class="lb-checkbox"><span></span>&nbsp;&nbsp;Thay đổi</label><br/><br/>
 				<textarea name="target_urls" ></textarea><br/><br/>
+			</div>
+
+			<div class="sbs-filter-by" id="sbs-filter-by1-image">
+				<span class="sbs-self-filter-title">Thay đổi địa chỉ</span><br/><hr/><br/><br/><br/>
+				<input type="checkbox" name="checkboxG4" id="checkboxG4" class="css-checkbox" /><label for="checkboxG4" class="lb-checkbox"><span></span>&nbsp;&nbsp;Thay đổi</label><br/><br/>
+				<textarea name="target_urls" ></textarea><br/><br/>
 
 				<span class="sbs-self-filter-title">Hình ảnh URL</span><br/><hr/><br/><br/>
 				<textarea ></textarea><br/><br/>
 
 				&nbsp;&nbsp;<img src="images/icon_star.png" alt="" />
-				<span style="width:280px;height:60px;float:right;color:#797979">Chọn hình ảnh trên trang merchant. Click chuột phải, chọn đường dẫn URl copy và paste vào ô text phía trên.</span><br/><br/>
+				<span style="width:300px;height:60px;float:right;margin-right:30px;color:#797979">Chọn hình ảnh trên trang merchant. Click chuột phải, chọn đường dẫn URl copy và paste vào ô text phía trên.</span>
 
-				<span class="sbs-self-filter-title">Mở trang đích</span><br/>
+				<div class="clear"></div>
+				<span class="sbs-self-filter-title">Mở trang đích</span><hr/><br/><br/><br/><br/>
 				<input type="radio" name="trang" value="trangmoi" id="trangmoi" />
-		        <label for="trangmoi"><span></span>Trang mới</label>&nbsp;&nbsp;&nbsp;&nbsp;
-				<input type="radio" name="trang" value="tranghientai" id="tranghientai" />
-		        <label for="tranghientai"><span></span>Trang hiện tại</label><br/><br/>
+		        <label for="trangmoi"><span></span>Trang mới</label>&nbsp;&nbsp;
+		        <input type="radio" name="trang" value="tranghientai" id="tranghientai" />
+		        <label for="tranghientai"><span></span>Trang hiện tại</label>&nbsp;&nbsp;
 				<input type="radio" name="trang" value="trangtuychon" id="trangtuychon" />
 		        <label for="trangtuychon"><span></span>Trang tùy chọn</label>
-
 			</div>
 
-			<div class="sbs-filter-by" id="sbs-filter-by1-text">				
-			</div>
+			<div class="sbs-filter-by" id="sbs-filter-by1-text">
+				<span class="sbs-self-filter-title">text</span><br/><hr/><br/><br/><br/>
+				<textarea name="target_urls" ></textarea><br/><br/>
 
-			<div class="sbs-filter-by" id="sbs-filter-by1-image">				
+				<span class="sbs-self-filter-title">Mở trang đích</span><hr/><br/><br/><br/><br/>
+				<input type="radio" name="text" value="text_moi" id="text_moi" />
+		        <label for="text_moi"><span></span>Trang mới</label>&nbsp;&nbsp;
+		        <input type="radio" name="text" value="text_ht" id="text_ht" />
+		        <label for="text_ht"><span></span>Trang hiện tại</label>&nbsp;&nbsp;
+				<input type="radio" name="text" value="text_cs" id="text_cs" />
+		        <label for="text_cs"><span></span>Trang tùy chọn</label>
 			</div>
 
 		</div>
@@ -120,9 +133,13 @@
 	<!-- link content-->
 	<div class="clear frame sbm-search-result sbs-self-tag-copy">
 		<div class="sbs-self-tag-title">
-			<hr/><input	type="submit" value="Tạo tag" /><hr/>
-		</div>
-
+			<hr/><input	type="submit" value="TẠO TAG" /><hr/>
+		</div><br/>
+		<img src="images/arrow_tag.png" alt="arrow tag" /> <span>Tag</span><br/><br/>
+		<textarea class="wrapper"></textarea><br/><br/><br/>
+		<div class="sbs-self-tag-title sbs-self-copy-title">
+			<hr/><img src="images/img_copy.png" alt="sao chep" /><hr/>
+		</div><br/><br/>
 	</div>
 </body>
 </html>

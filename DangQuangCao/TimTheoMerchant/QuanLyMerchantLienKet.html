@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Phuong thuc quang cao</title>
+	<link rel="stylesheet" type="text/css" href="get_ad_by_merchant.css">
+	<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+</head>
+<body>
+	<div class="clear frame sbm-manage-filter-box">
+		<p>Quản lý đồng loạt các liên kết của merchant. Vui lòng chọn đối tượng và điều tra thông tin liên kết.<br/><br/>
+		Dựa vào kết quả để điều chỉnh nội dung xuất ra.<br/><br/>
+		Trường hợp quản lý Merchant lớn như link portal, nếu quản lý theo tiêu chuẩn ID của Merchant sẽ có thể quản lý dễ dàng bằng các kỹ thuật liên kết.<br/><br/>
+		Nhập trực tiếp vào khung nhập ID của Merchant.</p><br/>
+		<hr/>
+		<span>1. Chọn đối tượng</span><br/><br/>
+		<div class="custom-select-box">
+            <select name="category" class="sbm-select">
+                <option value="ALL" selected="selected">Tất cả nội dung</option>
+                <option value="Y">Bảo hiểm</option>
+                <option value="b">Bất động sản</option>
+            </select>
+        </div>
+		<div class="custom-select-box">
+            <select name="category" class="sbm-select">
+                <option value="ALL" selected="selected">Tất cả nội dung</option>
+                <option value="Y">Bảo hiểm</option>
+                <option value="b">Bất động sản</option>
+            </select>
+        </div>
+		<div class="custom-select-box">
+            <select name="category" class="sbm-select">
+                <option value="ALL" selected="selected">Tất cả nội dung</option>
+                <option value="Y">Bảo hiểm</option>
+                <option value="b">Bất động sản</option>
+            </select>
+        </div>
+        <input type="submit" value="Tim Kiem" /> <div class="clear"></div><br/>
+
+		<div class="sbm-filter-obj">				
+			<span>2. Nhập Merchant ID</span><br/>
+			<textarea></textarea>
+		</div>
+
+		<div class="sbm-filter-value">
+			<span>3. Chọn giá trị tìm kiếm</span><input type="checkbox" name="all_select_checkbox" id="allSelect" class="css-checkbox" value="1" /><label for="allSelect" class="lb-checkbox" style="margin:7px 0px 0px 15px"><span></span>&nbsp;&nbsp;CHỌN TẤT CẢ</label><br/><br/><br/>
+
+			<input type="checkbox" name="checkboxG4" id="checkboxG4" class="css-checkbox" /><label for="checkboxG4" class="lb-checkbox"><span></span>&nbsp;&nbsp;ID</label>
+			<input type="checkbox" name="checkboxG4" id="checkboxG4" class="css-checkbox" /><label for="checkboxG4" class="lb-checkbox"><span></span>&nbsp;&nbsp;Tên miền </label>
+			<input type="checkbox" name="checkboxG4" id="checkboxG4" class="css-checkbox" /><label for="checkboxG4" class="lb-checkbox"><span></span>&nbsp;&nbsp;Thông tin website</label>
+
+			<input type="checkbox" name="checkboxG4" id="checkboxG4" class="css-checkbox" /><label for="checkboxG4" class="lb-checkbox"><span></span>&nbsp;&nbsp;Nội dung</label>
+			<input type="checkbox" name="checkboxG4" id="checkboxG4" class="css-checkbox" /><label for="checkboxG4" class="lb-checkbox"><span></span>&nbsp;&nbsp;Link cơ bản</label>
+			<input type="checkbox" name="checkboxG4" id="checkboxG4" class="css-checkbox" /><label for="checkboxG4" class="lb-checkbox"><span></span>&nbsp;&nbsp;URL</label>
+			<input type="checkbox" name="checkboxG4" id="checkboxG4" class="css-checkbox" /><label for="checkboxG4" class="lb-checkbox"><span></span>&nbsp;&nbsp;Hoa hồng</label>
+			<input type="checkbox" name="checkboxG4" id="checkboxG4" class="css-checkbox" /><label for="checkboxG4" class="lb-checkbox"><span></span>&nbsp;&nbsp;Công nhận tự động</label>
+			<input type="checkbox" name="checkboxG4" id="checkboxG4" class="css-checkbox" /><label for="checkboxG4" class="lb-checkbox"><span></span>&nbsp;&nbsp;Trạng thái đăng nhập</label>
+			
+			<span style="margin:40px 0px 10px 0px">4. Thứ tự sắp xếp</span>				
+			<div class="custom-select-box" style="clear:both">
+                <select name="category" class="sbm-select">
+                    <option value="ALL" selected="selected">Tất cả nội dung</option>
+                    <option value="Y">Bảo hiểm</option>
+                    <option value="b">Bất động sản</option>
+                </select>
+            </div>
+		</div>
+		<a class="view-result">Xem kết quả</a>
+		<a class="view-result save-by-excel"><img src="images/dev/icon_excel.png" alt="save to excel" /><span>Lưu bằng Excel</span></a>
+	</div><div class="clear"><br/>
+
+	<div class="clear frame sbm-tbl-total sbm-tbl-manage">
+		<a href="#">Xem kết quả</a>
+		<table>
+	        <thead>
+	            <td>STT</td>
+	            <td>ID</td>
+	            <td>Tên Website</td>
+	            <td>Hoa hồng</td>
+	            <td>Trạng thái đăng nhập</td>
+	            <td>Link cơ bản</td>
+	        </thead>
+	        <tbody>
+	            <tr>
+	                <td>1</td>
+	                <td>thoitrangtichtac</td>
+	                <td>Thoi trang tich tac</td>
+	                <td>200.000~900.000</td>
+	                <td>Đang hoạt động</td>
+	                <td class="cb-link-copy">
+	                    <input type="text" value="http://devac.adpia.vn:8080/ds" />
+	                    <span class="btn-copy-link">Copy</span>
+	                </td>
+	            </tr>
+	            <tr>
+	                <td>1</td>
+	                <td>thoitrangtichtac</td>
+	                <td>Thoi trang tich tac</td>
+	                <td>200.000~900.000</td>
+	                <td>Đang hoạt động</td>
+	                <td class="cb-link-copy">
+	                    <input type="text" value="http://devac.adpia.vn:8080/ds" />
+	                    <span class="btn-copy-link">Copy</span>
+	                </td>
+	            </tr>
+	        </tbody>
+	    </table>    
+	</div>
+</body>
+</html>
