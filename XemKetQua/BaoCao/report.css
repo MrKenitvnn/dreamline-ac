@@ -1,0 +1,207 @@
+@import url('../../main.css');
+
+
+/****** Bao Cao Thuong *****************/
+
+.report-menu-left{
+	width: 18%;
+	height: 1000px	;
+	float: left;
+	background: #e1e3e4;
+	color: #000;
+}
+.report-menu-left h2{
+	color: #000;
+}
+.report-menu-left ul{
+}
+.report-menu-left ul li{
+	padding-left: 20%;
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+}
+.report-menu-left ul li:first-child{
+	height: 30px;
+	line-height: 30px;
+	border-left: 2px solid #FFF;
+}
+.report-menu-left hr{
+	width: 80%;
+	margin: 10%;
+	border-top: 1px solid #b8b8b8;
+	border-bottom: 1px solid #FFF;
+}
+
+
+.report-content-right{
+	width: 82%;
+	height: 1000px	;
+	padding-top: 40px;
+	float: right;
+	text-align: center;
+}
+.report-content-right h2{
+	font-size: 18px;
+	font-weight: 400;
+}
+.report-content-right ul.report-nav{
+	width: 780px;
+	height: 150px;
+	padding-top: 50px;
+	margin:0px auto;
+}
+.report-nav-date{
+	width: 780px;
+	height: 80px;
+	margin-top: 40px;
+	margin:0px auto;
+	background:#e1e3e4;
+	border:1px solid #d8d8d8;
+	border-radius: 3px;
+}
+.report-content-right ul li{
+	min-width: 110px;
+	height: 90px;
+	float: left;
+	margin-right: 40px;
+	text-align: center;
+}
+.report-content-right ul li span{
+	width: 54px;
+	height: 54px;
+	display: block;
+	background: url('../images/list-icon-report.png');
+	margin: 0px auto;
+}
+
+.report-content-right ul li:nth-child(1) span{
+	background-position: -0px 0px;
+}
+.report-content-right ul li:nth-child(2) span{
+	background-position: -144px 0px;
+}
+.report-content-right ul li:nth-child(3) span{
+	background-position: -298px 0px;
+}
+.report-content-right ul li:nth-child(4) span{
+	background-position: -452px 0px;
+}
+.report-content-right ul li:nth-child(5) span{
+	background-position: -612px 0px;
+}
+
+.report-content-right ul li:nth-child(1).on span{
+	background-position: -0px 68px;
+}
+.report-content-right ul li:nth-child(2).on span{
+	background-position: -144px 68px;
+}
+.report-content-right ul li:nth-child(3).on span{
+	background-position: -298px 68px;
+}
+.report-content-right ul li:nth-child(4).on span{
+	background-position: -452px 68px;
+}
+.report-content-right ul li:nth-child(5).on span{
+	background-position: -612px 68px;
+}
+.report-nav ul li a{
+	padding: 10px 12px;
+	border:1px solid #cdcdcd;
+	border-radius: 3px;
+}
+.report-nav ul li.on a,
+.report-nav li a:hover{
+	background: #2baef1;
+	border:1px solid #2baef1;
+	color: #FFF;
+}
+.report-by-select{
+	height: 50px;
+	width: 940px;
+	margin:35px auto;
+}
+
+.report-by-select .custom-select-box{
+	width: 175px;
+	margin-top: 0px;
+	float: left;
+	margin-left: 15px;
+	background: url('../images/img-custom-select-smaller.png') !important;
+}
+.report-by-select .custom-select-box:first-child{
+	margin-left: 0px;
+}
+.report-by-select select{
+	width: 175px;
+}
+
+.tbl-report-general{
+	width: 100%;
+}
+.tbl-report-general thead{
+	background: #2baef1;
+}
+.tbl-report-general thead td{
+	padding-top:24px;
+	padding-bottom:10px;
+	padding-right: 5px;
+	padding-left: 5px;
+	color:#FFF;
+}
+.tbl-report-general td{
+	border-left:1px solid #e7e7e7;
+	border-bottom:1px solid #e7e7e7;
+	text-align: center;
+	font-family: Verdana;
+	font-size: 13px;
+}
+.tbl-report-general td:nth-child(3){
+	min-width: 110px;
+}
+.tbl-report-general td:nth-child(7){
+	min-width: 150px;
+}
+.tbl-report-general tbody td{
+	height: 48px;
+	line-height: 48px;
+}
+.tbl-report-general tbody td:nth-child(5),
+.tbl-report-general tbody td:nth-child(7){
+	background:#f2f2f2;
+}
+tr.tr-rep-gen-sumary td{
+	background: #47484a !important;
+	color: #FFF;
+}
+.rep-save-by-excel{
+	width: 100%;
+	height: 90px;
+	line-height: 100px;
+	background: -webkit-linear-gradient(#e5e6e7, #fdfdfd);
+	background: -moz-linear-gradient(#e5e6e7, #fdfdfd);
+	background: -o-linear-gradient(#e5e6e7, #fdfdfd);
+	text-align: center;
+}
+.rep-save-by-excel ul{
+	width: 160px;
+	margin:0px auto;
+}
+.rep-save-by-excel ul li{
+	margin:0px;	
+	line-height: 80px;
+}
+.rep-save-by-excel ul li:first-child{
+	min-width: 30px !important;
+}
+.rep-save-by-excel ul li a{
+	line-height: 60px;
+	margin: 0px;
+}
+
+
+
+
+
+/****** Bao Cao Tong Hop *****************/
