@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="get_ad_by_default.css">
+	<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+</head>
+<body>
+<br/>
+			
+	<!-- link nav-->
+	<div class="clear frame sbs-link-header">
+		<div class="sbs-link-nav">
+			<div>
+				<img src="images/img_link_banner_self.png">
+				<a>Liên kết</a>
+				<div class="sbs-link-navbg"></div>				
+			</div>
+		</div>
+		<div class="standard-nav-target">
+			<ul>
+				<li><a href="#" class="on">LINK BANNER CHUẨN</a></li>
+				<li><a href="#">LINK THƯỜNG</a></li>
+				<li><a href="#">LINK CƠ BẢN</a></li>
+			</ul>
+			<p class="clear">Là banner quảng cáo dạng flash hoặc hình ảnh có kích thước 		tiêu chuẩn được cung cấp bởi Adpia. Tự động cập nhật mỗi khi 	Merchant thay đổi</p>
+		</div>
+	</div>
+
+	<!-- link search  -->
+	<div class="clear frame sbs-link-search">
+		<form action="#" accept-charset="utf-8" name="searchForm" method="post">
+			<div class="sbm-custom-select">
+	            <select name="orderby" class="sbm-select">
+	                <option value="0" selected="selected">Hoa hồng</option>
+	                <option value="1">Tên Merchant</option>
+	            </select>
+	        </div>
+			<div class="standard-nav-tg-rad">
+	      	  	<input type="radio" name="subs_status" value="ALL" id="ALL" 
+	            checked="checked" onclick="search_submit()" />
+	            <label for="ALL"><span></span>Tất cả trạng thái liên kết</label>
+
+				<input type="radio" name="subs_status" value="APR" id="APR"  onclick="search_submit()" />
+	            <label for="APR" ><span></span>Merchant đã liên kết</label>
+	      	</div>
+
+	       	<input type="text" placeholder="Tìm kiếm" name="search_keyword" size="20" value=""  onFocus="check_keyword(this.form)" />
+	       	<input type="image" src="images/icon_search_blue.png" onclick="this.form.submit()" />
+       	</form>
+	</div>
+
+	<!-- link content-->
+	<div class="clear frame sbm-search-result tbl-basic-link">		
+		<table>
+			<thead>
+				<td>Merchant ID </td>
+				<td>Merchant/Category </td>
+				<td>Hoa Hồng</td>
+				<td>Đường dẫn quảng cáo</td>
+			</thead>
+			<tbody>
+				<tr>
+					<td><span>VietNam co len</span></td>
+					<td>
+						<a href="#" id="merchant-item-name">Yes24 Viet Nam</a><br/>
+                    	<span id="merchant-item-category">[  Thẩm mỹ viện/Làm đẹp  ]</span>
+                    </td>
+					<td>
+						<span id="merchant-item-percent">200.000 ~ 900.000</span><br/>
+                    	<span id="merchant-item-type">CPA</span>
+					</td>
+					<td class="cb-link-copy">
+						<input type="text" value="http://devac.adpia.vn:8080/ds" />
+	                    <span id="btn-copy-link" style="float:right">Copy</span>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>

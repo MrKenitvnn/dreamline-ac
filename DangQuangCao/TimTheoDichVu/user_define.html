@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="get_ad_by_default.css">
+	<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+</head>
+<body>
+<br/>
+			
+	<!-- link nav-->
+	<div class="clear frame sbs-link-header">
+		<div class="sbs-link-nav">
+			<div>
+				<img src="images/img_link_of_user.png">
+				<a>Liên kết</a>
+				<div class="sbs-link-navbg"></div>				
+			</div>
+		</div>
+		<div class="standard-nav-target">
+			<ul>
+				<li><a href="#" class="on">LINK DÀNH CHO NGƯỜI DÙNG</a></li>
+				<li><a href="#">LINK BANNER SELF</a></li>
+			</ul>
+			<p class="clear" style="padding:10px 10px 0px 10px;height:135px">Là link banner quảng cáo do Affiliate tự tạo kết nối với các sản phẩm hay các trang web sự kiện theo các link của Merchant cung cấp trên trang Adpia.<br/><br/>
+
+			Phụ thuộc theo loại link mà có thể chỉ tạo ra các đường dẫn đã bị thay đổi link banner, link text hay Adpia code. Phụ thuộc theo tình trạng nhập hay không nhập Merchant ID, chia thành 2 loại lớn là loại 1 và loại 2.</p>
+		</div>
+	</div>
+
+	<!-- link search  -->
+	<div class="clear frame sbs-self-filter">
+		<!-- chon loai -->
+		<div class="sbs-self-filter-1">
+			<span class="sbs-self-filter-title">Chọn loại</span><br/><hr/><br/>
+
+			<table>
+				<tr>
+					<td>
+						<input type="radio" name="subs_status" value="ALL" id="LOAI1" />
+		            	<label for="LOAI1"><span></span>Loại 1</label>
+					</td>
+					<td><img src="images/icon_star.png" alt="" /></td>
+					<td>
+						<span>Loại 01 : Không cần nhập Merchant ID riêng, chỉ cần nhập Link Targer mình thích là có thể tạo được link của 
+						Merchant tương ứng.</span>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="radio" name="subs_status" value="ALL" id="LOAI2" />
+		            	<label for="LOAI2"><span></span>Loại 2</label>
+					</td>
+					<td><img src="images/icon_star.png" alt="" /></td>
+					<td>
+						<span>Loại 02 : Đầu tiên phải nhập  
+						Merchant ID sau đó nhập LInk Target thì mới tạo được link.</span>
+					</td>
+				</tr>
+			</table>
+
+			<span class="sbs-self-filter-title">Loại đường dẫn</span><br/><hr/><br/><br/>
+			<div class="custom-select-box">
+	            <select name="link_type" class="sbm-select">
+	                <option value="url" selected="selected">Đường dẫn</option>
+	                <option value="image">Hình ảnh</option>
+	                <option value="text">Text</option>
+	            </select>
+	        </div>
+		</div>
+
+
+		<!-- thay doi dia chi -->
+		<div class="sbs-self-filter-2">
+
+			<div class="sbs-filter-by" id="sbs-filter-by1-url">		
+				<span class="sbs-self-filter-title">Thay đổi địa chỉ</span><br/><hr/><br/><br/><br/>
+				<input type="checkbox" name="checkboxG4" id="checkboxG4" class="css-checkbox" /><label for="checkboxG4" class="lb-checkbox"><span></span>&nbsp;&nbsp;Thay đổi</label><br/><br/>
+				<textarea name="target_urls" ></textarea><br/><br/>
+			</div>
+
+			<div class="sbs-filter-by" id="sbs-filter-by1-image">
+				<span class="sbs-self-filter-title">Thay đổi địa chỉ</span><br/><hr/><br/><br/><br/>
+				<input type="checkbox" name="checkboxG4" id="checkboxG4" class="css-checkbox" /><label for="checkboxG4" class="lb-checkbox"><span></span>&nbsp;&nbsp;Thay đổi</label><br/><br/>
+				<textarea name="target_urls" ></textarea><br/><br/>
+
+				<span class="sbs-self-filter-title">Hình ảnh URL</span><br/><hr/><br/><br/>
+				<textarea ></textarea><br/><br/>
+
+				&nbsp;&nbsp;<img src="images/icon_star.png" alt="" />
+				<span style="width:300px;height:60px;float:right;margin-right:30px;color:#797979">Chọn hình ảnh trên trang merchant. Click chuột phải, chọn đường dẫn URl copy và paste vào ô text phía trên.</span>
+
+				<div class="clear"></div>
+				<span class="sbs-self-filter-title">Mở trang đích</span><hr/><br/><br/><br/><br/>
+				<input type="radio" name="trang" value="trangmoi" id="trangmoi" />
+		        <label for="trangmoi"><span></span>Trang mới</label>&nbsp;&nbsp;
+		        <input type="radio" name="trang" value="tranghientai" id="tranghientai" />
+		        <label for="tranghientai"><span></span>Trang hiện tại</label>&nbsp;&nbsp;
+				<input type="radio" name="trang" value="trangtuychon" id="trangtuychon" />
+		        <label for="trangtuychon"><span></span>Trang tùy chọn</label>
+			</div>
+
+			<div class="sbs-filter-by" id="sbs-filter-by1-text">
+				<span class="sbs-self-filter-title">text</span><br/><hr/><br/><br/><br/>
+				<textarea name="target_urls" ></textarea><br/><br/>
+
+				<span class="sbs-self-filter-title">Mở trang đích</span><hr/><br/><br/><br/><br/>
+				<input type="radio" name="text" value="text_moi" id="text_moi" />
+		        <label for="text_moi"><span></span>Trang mới</label>&nbsp;&nbsp;
+		        <input type="radio" name="text" value="text_ht" id="text_ht" />
+		        <label for="text_ht"><span></span>Trang hiện tại</label>&nbsp;&nbsp;
+				<input type="radio" name="text" value="text_cs" id="text_cs" />
+		        <label for="text_cs"><span></span>Trang tùy chọn</label>
+			</div>
+
+		</div>
+
+
+		<!-- target url -->
+		<div class="sbs-self-filter-3">
+			<span class="sbs-self-filter-title">Target URL</span><br/><hr/><br/><br/><br/>
+			<span style="color:#797979">Nhập trực tiếp</span><br/><br/>
+			<textarea style="height:110px;margin-bottom:10px;" ></textarea>
+			&nbsp;&nbsp;<img src="images/icon_star.png" alt="" />
+			<span style="width:280px;height:85px;float:right;color:#797979">Khi phân loại bằng Enter và nhập thì có thể tạo luôn hầu hết đường dẫn trong một lần.</span><br/><br/>
+
+			<span class="clear sbs-self-filter-title">Giá trị chỉ định người dùng (u_id)</span>
+			<br/><hr/><br/><br/>
+			<textarea style="width:208px;height:63px;margin-top:25px" ></textarea>
+			<input type="checkbox" name="cbSave" id="cbSave" class="css-checkbox" /><label for="cbSave" class="lb-checkbox" style="float:right;line-height:124px;margin-right:10px;"><span></span>&nbsp;&nbsp;Lưu</label>
+		</div>
+	</div>
+
+	<!-- link content-->
+	<div class="clear frame sbm-search-result sbs-self-tag-copy">
+		<div class="sbs-self-tag-title">
+			<hr/><input	type="submit" value="TẠO TAG" /><hr/>
+		</div><br/>
+		<img src="images/arrow_tag.png" alt="arrow tag" /> <span>Tag</span><br/><br/>
+		<textarea class="wrapper"></textarea><br/><br/><br/>
+		<div class="sbs-self-tag-title sbs-self-copy-title">
+			<hr/><img src="images/img_copy.png" alt="sao chep" /><hr/>
+		</div><br/><br/>
+	</div>
+</body>
+</html>
