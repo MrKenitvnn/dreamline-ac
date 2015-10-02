@@ -53,7 +53,7 @@
 	width: 82%;
 	padding-top: 40px;
 	float: left;
-	text-align: center;
+	overflow:hidden;
 	background: #FFF;
 }
 .report-content-right h2{
@@ -87,7 +87,7 @@
 	width: 54px;
 	height: 54px;
 	display: block;
-	background: url('../images/list-icon-report.png');
+	background: url('images/list-icon-report.png');
 	margin: 0px auto;
 }
 
@@ -144,7 +144,7 @@ ul.report-nav li a:hover{
 	margin-top: 0px;
 	float: left;
 	margin-left: 15px;
-	background: url('../images/img-custom-select-smaller.png') !important;
+	background: url('images/img-custom-select-smaller.png') !important;
 }
 .report-by-select .custom-select-box:first-child{
 	margin-left: 0px;
@@ -226,7 +226,7 @@ ul.rep-des-bottom{
 	float: left;
 }
 ul.rep-des-bottom li {
-	background: url('../images/icon-li-report-stype.png') no-repeat top left;
+	background: url('images/icon-li-report-stype.png') no-repeat top left;
 	margin: 0;
 	padding: 0px 0 0px 20px;
 	list-style: none;
@@ -243,7 +243,7 @@ ul.rep-des-bottom li span{
 	width: 12px;
 	height: 12px;
 	margin:3px;
-	background: url('../images/list-icon-mst.png');
+	background: url('images/list-icon-mst.png');
 }
 .report-img-s{
 	background-position: -16px 0px;
@@ -281,3 +281,52 @@ ul.rep-des-bottom li span{
 	padding: 50px 0px 100px 0px;
 	overflow: hidden;
 }
+
+/**
+ * Hoa hong
+ **/
+.rp-rose-nav-parent{
+	width:97%;
+	height: auto;
+	overflow: hidden;
+	margin:0px auto;
+	margin-top:70px;
+	border:1px solid #e1e3e4;
+}
+.rp-rose-nav{
+	min-height: 100px;
+	border:3px solid #e1e3e4;
+	background: #ebebeb;
+}
+.rp-rose-request-time{
+	width: 30%;
+	height: 60px;
+	float: right;
+	border-left: 1px solid #dedede;
+}
+.rp-rose-money{
+
+}
+.rp-rose-money ul{
+	width: 67%;
+	height: 100px;
+	margin: 1%;
+	background: #e0e0e0;
+	float: left;
+}
+.rp-rose-money ul li{
+	
+}
+.rp-rose-request{
+	width: 30%;
+	height: 225px;
+	float: right;
+	border-left: 1px solid #dedede;
+}
+
+
+
+
+/**
+ * Uu dai
+ **/
