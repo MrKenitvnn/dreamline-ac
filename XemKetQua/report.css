@@ -50,8 +50,9 @@
 }
 
 .report-content-right{
-	width: 82%;
+	width: 80%;
 	padding-top: 40px;
+	margin: 0px auto;
 	float: left;
 	overflow:hidden;
 	background: #FFF;
@@ -140,11 +141,11 @@ ul.report-nav li a:hover{
 }
 
 .report-by-select .custom-select-box{
-	width: 175px;
+	width: 170px;
+	height: 42px;
 	margin-top: 0px;
 	float: left;
 	margin-left: 15px;
-	background: url('images/img-custom-select-smaller.png') !important;
 }
 .report-by-select .custom-select-box:first-child{
 	margin-left: 0px;
@@ -294,18 +295,69 @@ ul.rep-des-bottom li span{
 	border:1px solid #e1e3e4;
 }
 .rp-rose-nav{
-	min-height: 100px;
+	min-height: 66px;
 	border:3px solid #e1e3e4;
+	padding: 10px 5px 10px 15px;
 	background: #ebebeb;
 }
+.rp-rose-nav div{
+	width:198px;
+	height: 66px;
+	float: left;
+}
+.rp-rose-nav div:nth-child(1){
+	text-align: center;
+	background: url('images/bg-hoso-hoahong.png') no-repeat;
+}
+.rp-rose-nav div:nth-child(1) span{
+	margin-top: 20px;
+	display: block;
+	font-weight: bold;
+	font-size: 14px;
+}
+.rp-rose-nav div:nth-child(2){
+	margin-left: 15px;
+	border-right: 1px solid #d3d3d3;
+	line-height: 66px;
+	background: url('images/icon-affiliate-contract.png') no-repeat;
+	background-position: left 10px center;
+	text-align: center;
+}
+.rp-rose-nav div:nth-child(2) span{
+	font-size: 16px;
+	margin-left: 40px;
+}
+.rp-rose-nav div:nth-child(3){
+	width: 235px;
+	text-align: center;
+	line-height: 66px;
+	border-right: 1px solid #d3d3d3;
+	background: url('images/icon-personal-cmt.png') no-repeat;
+	background-position: right 10px center;
+}
+.rp-rose-nav div:nth-child(3) span{
+	font-size: 16px;
+	float: left;
+	margin-left: 10px;
+}
 .rp-rose-request-time{
-	width: 30%;
-	height: 60px;
-	float: right;
-	border-left: 1px solid #dedede;
+	width: 335px !important;
+	height: 66px;
+	line-height: 66px;
+	float: right !important;
+}
+.rp-rose-request-time span{
+	color: #ff3500;
+	font-size: 12px;
+	font-weight: bold;
+	float: left;
+}
+.rp-rose-request-time a{
+	height: 50px;
+	display: block;
+	float: right !important;	
 }
 .rp-rose-money{
-
 }
 .rp-rose-money ul{
 	width: 67%;
@@ -323,9 +375,41 @@ ul.rep-des-bottom li span{
 	float: right;
 	border-left: 1px solid #dedede;
 }
+.tbl-rp-rose{
+	width: 100%;
+	text-align: center;
+	margin-bottom: 50px;
+}
+.tbl-rp-rose td{
+	min-height: 48px;
+	line-height: 48px;
+}
+.tbl-rp-rose thead td{
+	height: 48px;
+	line-height: 48px;
+	color:#FFF;
+	background: #2baef1;
+}
+.tbl-rp-rose tbody td{
+	background: #f2f2f2;
+}
+.tbl-rp-rose tbody td span{
+	color: #ff2a00;
+}
+.tbl-rp-rose tbody td:nth-child(2){
+	background: #fff;
+}
 
-
-
+.tbl-rp-rose tbody tr:last-child td{
+	background: #47484a;
+}
+.tbl-rp-rose tbody tr:last-child td span{
+	color: #FFF;
+	font-weight: bold;
+}
+.tbl-rp-rose-month tbody td span{
+	color: #000;
+}
 
 /**
  * Uu dai
