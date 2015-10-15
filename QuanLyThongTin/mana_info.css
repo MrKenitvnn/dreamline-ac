@@ -1,0 +1,39 @@
+@import url('../main.css');
+
+.mana-info-left h2{
+	font-size: 17px;
+}
+.mana-info-left>a{
+	width: 180px;
+	height: 43px;
+	display: block;
+	line-height: 44px;
+	border:1px solid #eee;
+	margin-left:12px;
+	background: #FFF;
+	padding-left: 30px;
+	font-size: 16px;
+}	
+
+ul.mana-my-info-ul li:first-child{
+	width: 155px;
+	height: 25px;
+	border-radius: 30px;
+	margin-bottom: 10px;
+	line-height: 24px;
+	box-shadow: inset 0px 2px 2px #cacaca;
+}
+ul.mana-my-info-ul li:first-child a{
+	width: 100%;
+	margin: 0px;
+	line-height: 28px;
+	font-size: 13px;
+	font-weight: bold;
+	color: #595959;
+	background: url('../images/arror-right-email.png') no-repeat right 10px center;
+}
+ul.mana-my-info-ul li:first-child.on,
+ul.mana-my-info-ul li:first-child:hover{
+	box-shadow: 0px 2px 2px #cacaca;
+}
+

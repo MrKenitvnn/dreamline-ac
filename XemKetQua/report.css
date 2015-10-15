@@ -3,64 +3,6 @@
 
 /****** Bao Cao Thuong *****************/
 
-.report-menu-left{
-	width: 18%;
-	float: left;
-	color: #000;
-	overflow: hidden;
-}
-.report-menu-left h2{
-	color: #000;
-	font-size: 20px;
-	font-weight: 400;
-	padding-left: 20%;
-}
-.report-menu-left h2:first-child{
-	margin-top: 20px;
-}
-.report-menu-left h2.on{
-	color: #2baef1;
-	padding-left: 18%;
-	border-left: 5px solid #2baef1;
-}
-.report-menu-left ul{
-	margin-left: 20%;
-	margin-top: 15px;
-}
-.report-menu-left ul li{
-	width: 80%;
-	/*height: 50px;
-	line-height: 50px;*/
-	padding-left: 15px;
-}
-.report-menu-left ul li:hover,
-.report-menu-left ul li.on{
-	background: #FFF;
-}
-.report-menu-left hr{
-	width: 80%;
-	margin: 10%;
-	border-top: 1px solid #b8b8b8;
-	border-bottom: 1px solid #FFF;
-}
-.report-menu-left ul li a{
-	font-size: 16px;
-	padding: 15px 0px 15px 0px;
-	display: block;
-}
-
-.report-content-right{
-	width: 80%;
-	padding-top: 40px;
-	margin: 0px auto;
-	float: left;
-	overflow:hidden;
-	background: #FFF;
-}
-.report-content-right h2{
-	font-size: 18px;
-	font-weight: 400;
-}
 .report-content-right ul.report-nav{
 	width: 780px;
 	height: 130px;
@@ -414,3 +356,14 @@ ul.rep-des-bottom li span{
 /**
  * Uu dai
  **/
+ .rp-content-incentive{
+ 	text-align: center;
+ }
+ .rp-content-incentive h2{
+ 	line-height: 40px;
+ }
+ .rp-incentive-nav-date{
+ 	width: 100% !important;
+ 	border-radius: 0px;
+ 	border: 0px;
+ }
