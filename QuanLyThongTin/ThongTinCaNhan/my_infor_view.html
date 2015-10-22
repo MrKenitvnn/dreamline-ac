@@ -14,8 +14,8 @@
 		<div class="report-menu-left mana-info-left" >
 			<h2 class="on">THÔNG TIN CÁ NHÂN</h2>
 			<ul class="mana-my-info-ul">
-				<li class="on"><a href="#">SOẠN THƯ</a></li>
-				<li><a href="#">Hồ sơ cá nhân</a></li>
+				<li><a href="#">SOẠN THƯ</a></li>
+				<li class="on"><a href="#">Hồ sơ cá nhân</a></li>
 				<li><a href="#">Hộp thư đến</a></li>
 				<li><a href="#">Hộp thư đi</a></li>
 				<li><a href="#">Hộp thư nháp</a></li>
@@ -32,54 +32,118 @@
 
 		<!-- Content right -->
 		<div class="report-content-right">			
-			<div style="width:98%;text-align:center;border-bottom:1px dashed #eee">
+			<div class="my-info-header">
 				<h2>Hồ sơ cá nhân</h2>
-				<span>Lorem is pum pum pum pum pum pum pum pum pum pum pum pum pum pum pum pum pum pum pum pum pum pum pum pum pum pum pum pum pum pum pum pum pum pum pum pum pum pum pum </span>	
+				<span>Lorem is pum pum pum pum pum pum pum pum pum pum pum pum pum pum pum pum </span>	
 			</div>
 
-			<div style="width:950px; margin:50px auto;height:auto;overflow:hidden">
-				<h2>NGUYỄN VĂN Ý</h2>					
+			<div class="my-info-content">
+				<h2>NGUYỄN VĂN Ý</h2>	
+				<div class="clear"></div>
 
-				<div style="width:260px;float:left">
+				<div class="mn-info-content-left">
 					<div class="custom-select-box">
 						<select name="aff_id" id="aff_id">
 							<option>Affiliate cá nhân</option>
 						</select>
 					</div>
-					<span>Điện thoại: </span><input type="text" name="dienthoai" />
-					<span>Email: </span><input type="text" name="email" />
+
+					<span>Điện thoại: </span>
+					<input type="text" name="dienthoai" style="border:none" value="0975882458"/><br/>
+					
+					<span>Email: </span>
+					<input type="text" name="email" style="border:none" value="mry.nsth@yahoo.com" placeholder="please fill in" />
 
 					<div class="mn-info-password">
-						<span>Password</span><hr/><br/>
-						Current Password:<br/> <input type="password"  /><br/>
-						New Password:<br/> <input type="password"  /><br/>
-						New Password again:<br/> <input type="password"  />
+						<span>Password</span><hr/><br/><br/>
+
+						<span>Current Password</span><br/> 
+						<input type="password"  /><br/><br/>
+
+						<span>New Password</span><br/>
+						<input type="password"  /><br/><br/>
+
+						<span>New Password again</span><br/>
+						<input type="password"  />
 					</div>
 				</div>
-				<div style="width:585px;float:right">
-					<div style="width:140px;height:100px;float:left">
-						Ngày sinh
+
+				<div class="mn-info-content-right">
+					<hr/>
+					<div class="clear" style="margin-top:50px;"></div>
+
+					<div class="mn-info-right-date">
+						<span>Ngày sinh</span>
+						<hr/>
+						<br/><br/>
 						<input type="date" />						
 					</div>
-					<div style="width:350px;height:100px;float:right">
-						Nhận thông tin qua email
-					</div>
-					<div class="clear">
-						Địa chỉ liên lạc <br/>
-						An Dương Tây Hồ, TP Hà Nội Việt Nam 
-					</div>
-					<div class="clear">
-						Tài khoản ngân hàng  <hr/><br/>
-						<span>Chủ tài khoản</span><input type="text" />
-						<span>Số tài khoản</span><input type="text" /><br/>						
-						<span>Tên ngân hàng</span>
-						<div class="custom-select-box" style="border-radius:0px">
-							<select name="asd" id="asd">
-								<option>Vietcombank</option>
+					<div class="mn-info-right-email">
+						<span>Nhận thông tin qua email</span>
+						<hr/>
+						<div class="custom-select-box">
+							<select name="nhan-email" id="nhan-email">
+								<option value="nhan het">Accept all email for me</option>
 							</select>
-						</div><br/>
-						<span>Chi nhánh</span>						  
+						</div>
 					</div>
+					<div class="clear mn-info-right-address">
+						<span>Địa chỉ liên lạc</span>
+						<hr/>
+						<br/>
+						<br/>
+						<span style="line-height:40px;">An Dương Tây Hồ, </span>
+						<div class="custom-select-box">
+							<select name="nhan-email" id="nhan-email">
+								<option value="nhan het">TP Hà Nội</option>
+							</select>
+						</div>
+						
+						<img src="../images/icon-viet-nam.png" alt="" style="margin:10px" />
+						<span style="line-height:34px;">Việt Nam</span>
+					</div>
+
+					<div class="clear mn-info-right-bank">
+						<span>Tài khoản ngân hàng</span>
+						<hr/>
+						<br/><br/>
+						<span>Chủ tài khoản</span><input type="text" />
+						<span style="height:30px;line-height:30px;margin-left:10px">Số tài khoản</span><input type="text" /><div class="clear"></div>	<br/>
+						<span style="height:50px;line-height:50px;">Tên ngân hàng</span>
+						<div class="custom-select-box" style="border-radius:0px;float:left;margin:0px">
+							<select name="asd" id="asd">
+								<option>Vietcombank</option>	
+							</select>
+						</div><br/><div class="clear"></div><br/>
+						<span >Chi nhánh</span><input type="text" />
+					</div><div class="clear"></div>
+
+					<span style="color:#2baef1;font-size:13px;display:block;margin:30px 0px;border-bottom:1px solid #dddddd;padding-bottom:30px;">
+						Vui lòng nhập số tài khoản không có dấu cách. <br/>
+						Cá nhân, công ty phải đăng ký người quản lý và chủ tài khoản thì mới được chi cấp
+					</span>
+
+					<span style="font-weight:bold;">ĐỒNG Ý CHUYỂN THÔNG TIN CÁ NHÂN CHO NGƯỜI THỨ 3</span>
+
+					<textarea name="">1. Người nhận thông tin cá nhân
+- Merchant tiến hành sự kiên qua Adpia
+
+2. Mục đích sử dụng của người nhận thông tin cá nhân
+- Chuyển và hướng dẫn giải thưởng trúng ở sự kiện
+
+3. Mục thông tin cá nhân được cung cấp
+- Tên/số điện thoại nhà/ số điện thoại di động/ địa chỉ
+
+4. Lưu trữ thông tin cá nhân của người nhận thông tin đó và thời gian sử dụng
+- Cung cấp khi được sự đồng ý của khách hàng, hủy thông tin được cung cấp khi hủy hội viên
+
+※Trường hợp không đồng ý, dù trúng thưởng ở sự kiện cũng không được chuyển giải thưởng.
+					</textarea>
+
+				<ul class="button-bottom-ul">
+					<li><a href="#" title="">THAY ĐỔI</a></li>
+					<li><a href="#" title="">HỦY HỘI VIÊN</a></li>
+				</ul>
 				</div>
 			</div>
 		</div>

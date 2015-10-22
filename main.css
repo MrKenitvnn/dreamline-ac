@@ -8,15 +8,15 @@ body{
 }
 @font-face{
     font-family: openLight;
-    src: url(../../fonts/opensans-light-webfont.woff);
+    src: url(fonts/opensans-light-webfont.woff);
 }
 @font-face{
     font-family: openRegular;
-    src: url(../../fonts/opensans-regular-webfont.woff);
+    src: url(fonts/opensans-regular-webfont.woff);
 }
 @font-face{
     font-family: openSemiBold;
-    src: url(../../fonts/opensans-semibold-webfont.woff);
+    src: url(fonts/opensans-semibold-webfont.woff);
 }
 
 a, p, span, h2,label, td{
@@ -1921,4 +1921,5 @@ input[type="checkbox"]:checked + label span {
 .report-content-right h2{
     font-size: 18px;
     font-weight: 400;
+    font-family: openRegular;
 }
