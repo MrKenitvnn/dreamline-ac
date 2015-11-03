@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="../../mana_info.css">
+</head>
+<body>
+	
+	<div class="clear wrapper" style="background:#e1e3e4;overflow:hidden">
+
+		<!-- Menu Left -->
+		<div class="report-menu-left mana-info-left" >
+			<h2 class="on">THÔNG TIN CÁ NHÂN</h2>
+			<ul class="mana-my-info-ul">
+				<li><a href="#">SOẠN THƯ</a></li>
+				<li><a href="#">Hồ sơ cá nhân</a></li>
+				<li><a href="#">Hộp thư đến</a></li>
+				<li><a href="#">Hộp thư đi</a></li>
+				<li><a href="#">Hộp thư nháp</a></li>
+			</ul>
+			<hr/> <div class="clear"></div>
+			<h2>THÔNG TIN WEBSITE</h2>
+			<ul>
+				<li><a href="#">Thông tin website</a></li>
+				<li><a href="#">Thông tin marketing</a></li>
+				<li class="on"><a href="#">Thông tin kết quả</a></li>
+			</ul>
+			<a href="#">Đăng xuất tài khoản <img style="margin-left:10px" src="http://devac.adpia.vn:8080/images/dev/icon-logout.png" alt=""></a>
+		</div>
+
+		<!-- Content right -->
+		<div class="report-content-right">			
+			<div class="my-info-header">
+				<h2>Thông tin marketing</h2>
+				<span> Vui lòng chọn website. (Có thể đăng ký bổ sung facebook cá nhân, fanpage, blog và website cá nhân)</span>	
+			</div>
+
+			<!--content-->
+			<div class="clear site-info-content">
+
+				<div class="site-info-add-more">
+					<div class="custom-select-box">
+						<select name="aff_id" id="aff_id">
+							<option>facebook</option>
+						</select>
+					</div>	
+					<a href="#" title="bo sung website">Bổ sung website</a>
+				</div><div class="clear"></div>
+
+				<ul class="site-info-nav-ul">
+					<li><a href="#" title="">THÔNG TIN WEBSITE</a></li>
+					<li><a href="#" title="">THÔNG TIN MARKETING</a></li>
+					<li class="on"><a href="#" title="">NHẬN THÔNG TIN KẾT QUẢ</a></li>
+				</ul>
+				<ul class="clear infom-nav-ul">
+					<li><a href="#">Hướng dẫn sử dụng</a></li>
+					<li class="on"><a href="#">Đăng ký</a></li>
+					<li><a href="#">Kiểm tra thông tin log</a></li>
+					<li><a href="#">Kiểm tra thông tin hủy</a></li>
+				</ul>
+	
+				<div class="infom-sec1-title infom-sec2-ttkq">
+					<hr/><span>CÀI ĐẶT NHẬN THÔNG TIN KẾT QUẢ</span><hr/>	
+				</div>
+				<span style="color:#3a3a3a">
+					<span style="font-weight:bold">Phương thức chuyển</span><br/><br/>
+
+					Khi phát sinh kết quả tại Adpia thì kết quả đó được chuyển thông qua đường dẫn đặc trưng trong trang Affiliate có chứa các thông số. Kết nối http được mở bằng phương thức GET trong adpia server, người dùng không thể nhìn thấy các thông số này.<br/><br/>
+
+					<span style="font-weight:bold">Các bước cần thiết</span><br/><br/>
+					Khi tiến hành chuyển kết quả theo phương thức trên thì tại trang của Affiliate phải sử dụng Script (ASP,PHP,JSP,CGI) để nhận kết quả. Sau khi nhập đường dẫn của file Script [địa chỉ đường dẫn chuyển kết quả], kiểm tra dữ liệu sẽ nhận (lựa chọn các dữ liệu muốn nhận ở bên dưới, đăng tải thông số) có thể tự động nhận các thông tin tương ứng.
+				</span>
+
+				<div class="infom-sec1-title infom-sec2-dldc">
+					<hr/><span>CÀI ĐẶT CÁC DỮ LIỆU ĐƯỢC CHUYỂN</span><hr/>
+				</div>
+
+				<span class="infom-sec2-dldc-tt">
+					Vui lòng điền đầy đủ những thông tin cần thiết dưới đây (Lưu ý: những ô màu 
+					<img src="../../images/img-infom-color-blue.png" alt=""/>
+					 là những trường bắt buộc cần điền đầy đủ thông tin)
+				</span><div class="clear"></div>
+
+				<div class="infom-sec2-div infom-sec2-div1">
+					<span>Đường dẫn</span><hr style="width:180px" />
+					<input type="text" class="infom-sec2-duong-dan" placeholder="" value="http://www.thitgaluoc.vn" />
+					<span class="infom-sec2-div-des">Địa chỉ đường dẫn được chuyển</span>	
+
+					<div class="clear"></div>
+					<span>Hoa hồng</span><hr style="width:200px" />
+					<input type="text" placeholder="Bắt buộc nhập" value="" />
+
+					<div class="clear" style=""></div>
+					<span>Reward ID</span><hr style="width:190px" />
+					<input type="text" placeholder="Bắt buộc nhập" value="" />
+
+					<div class="clear" style=""></div>
+					<span>Point</span><hr style="width:230px" />
+					<input type="text" placeholder="Bắt buộc nhập" value="" />
+					<span class="infom-sec2-div-des">Dành cho ứng dụng mobile</span>	
+				</div>
+
+				<div class="infom-sec2-div infom-sec2-div2">
+					<span>Ngày tháng</span><hr style="width:180px" />
+					<input type="text" placeholder="Không sử dụng" value="" /><div class="clear"></div>
+
+					<span>Mã Merchant</span><hr style="width:170px" />
+					<input type="text" placeholder="Không sử dụng" value="" /><div class="clear"></div>
+
+					<span>Mã sản phẩm</span><hr style="width:170px" />
+					<input type="text" placeholder="Không sử dụng" value="" /><div class="clear"></div>
+
+					<span>Mã các mục</span><hr style="width:180px" />
+					<input type="text" placeholder="Không sử dụng" value="" /><div class="clear"></div>
+
+					<span>Số tiền quyết toán</span><hr style="width:140px" />
+					<input type="text" placeholder="Không sử dụng" value="" />
+				</div>
+
+
+				<div class="infom-sec2-div infom-sec2-div3">
+					<span>Thời gian</span><hr style="width:200px" />
+					<input type="text" placeholder="Không sử dụng" value="" /><div class="clear"></div>
+
+					<span>Mã đặt hàng</span><hr style="width:180px" />
+					<input type="text" placeholder="Không sử dụng" value="" /><div class="clear"></div>
+
+					<span>Tên sản phẩm</span><hr style="width:170px" />
+					<input type="text" placeholder="Không sử dụng" value="" /><div class="clear"></div>
+
+					<span>Số lượng</span><hr style="width:200px" />
+					<input type="text" placeholder="Không sử dụng" value="" /><div class="clear"></div>
+
+					<span>IP</span><hr style="width:250px" />
+					<input type="text" placeholder="Không sử dụng" value="" />
+				</div>
+
+				<div class="clear site-info-bottom reward-info-bottom">
+					<hr /> 
+					<ul class="button-bottom-ul">
+						<li><a href="#" title="">THAY ĐỔI</a></li>
+						<li><a href="#" title="">TEST</a></li>
+					</ul>
+					<hr style="width:350px" />
+				</div>
+
+				<span style="display:block;text-align:center"><br/>
+					<span style="font-weight:bold">Hỏi đáp dịch vụ:</span><br/><br/>
+
+					Quá trình xác định
+					<span style="font-weight:bold">CPS </span>	Reward 04.2260.6074 affiliate@adpia.vn / 
+					<span style="font-weight:bold">CPA </span> 04.2260.6074 info@adpia.vn<br/>
+					Hỏi đáp hệ thống: 04 22606074 affiliate@adpia.vn
+
+				</span>
+			</div><!-- end content-->
+		</div>
+	</div>
+</body>
+</html>
