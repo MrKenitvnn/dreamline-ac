@@ -593,17 +593,170 @@ td .btn-tao-tag{
     display: block;
 }
 
-/**
- * link banner self
- *
- **/
-
-
-
 textarea {
     width: 300px;
     height: 50px;
     resize: none;
     border: 1px solid #d7d7d7;
     border-radius: 5px;
+}
+
+
+/**
+ * TODO continus
+ * link banner self
+ * @url('/get_ad_by_self/self_banner_link')
+ **/
+ .sbs-self-link-list{
+    margin-top:20px;
+    margin-bottom: 40px;
+ }
+.sbs-self-link-list span{
+    font-size: 16px;
+}
+
+.sbs-self-table td .btn-xemlienket{
+    margin-left: 50px;
+    float: left;
+}
+.btn-xoa-black{
+    width: 50px;
+    height: 22px;
+    line-height: 22px;
+    color: #FFF;
+    background: #363636;
+    border-radius:3px;
+}
+.btn-xemlienket{
+    width:138px;
+    height: 32px;
+    color:#FFF;
+    background: #34d477;
+    border-radius:26px 26px 26px 26px;
+    line-height: 32px;
+    text-align: center;
+    font-size: 16px;
+}
+.sbs-self-table td .btn-xoa-black{
+    margin-left: 46px;
+    float: left;
+}
+
+
+/**
+ * self banner add
+ * @url('/make_tag/self_banner_add')
+ **/
+ .sbs-self-banner-add{
+    width: 736px;
+    margin:40px auto;
+ }
+ .sbs-self-banner-add-1{
+    width: 435px;
+    float: left;
+    display: block;    
+    font-size:16px;
+ }
+ .sbs-self-banner-add-2{
+    width: 300px;
+    float: right;
+    display: block;
+    margin-bottom: 20px;
+ }
+ .sbs-self-banner-add span span{
+    color: #6996ae;
+    font-family: Verdana;
+    font-size:16px;
+ }
+.sbs-self-banner-add-form{
+    border:1px solid #d3d3d3;
+}
+.sbs-self-banner-add-form td{
+    height: 75px;
+    text-align: center;
+    font-weight: 600;
+    font-family: Verdana;
+}
+.sbs-self-banner-td-sp{
+    width: 140px;
+    color:#FFF;
+    font-size: 16px;
+    background: #4682a0;
+ }
+ .sbs-self-banner-rowspan{
+    width: 75px;
+    background: #e0e0e0;
+    color:#4682a0;
+    font-size: 90px;
+    font-family: Verdana !important;
+ }
+ .sbs-self-banner-add-form tr input{
+    background: #e1e1e1;
+    padding: 10px;
+    border:none;
+    margin: 0px 20px 0px 20px;
+ }
+ .sbs-self-banner-add-form tr:first-child input{
+    width: 460px;
+    margin: 0px 20px 0px 20px;
+ }
+ .sbs-self-banner-add-form tr:last-child input{
+    width: 90px;
+    float: right;
+    margin: 0px 20px 0px 0px;
+ }
+ .sbs-self-banner-add-form input::-webkit-input-placeholder {
+    color:#a0a0a0;
+ }
+ .sbs-self-banner-add-form input:-moz-placeholder {
+    color:#a0a0a0;
+ }
+ .sbs-self-banner-add-form input::-moz-placeholder {
+    color:#a0a0a0;
+ }
+ .sbs-self-banner-add-form input:-ms-input-placeholder {
+    color:#a0a0a0;
+ }
+ .sbs-self-banner-add-form .custom-select-box{
+    height: 38px;
+    width: 160px;
+    border-radius: 0px;
+    margin-left: 20px;
+    float: left;
+ }
+ .sbs-self-banner-add-form .custom-select-box select{
+    padding-top: 0px !important;
+ }
+.sbs-self-banner-add-form tr:last-child td:last-child{
+    height: 74px !important;
+    border-top: 1px solid #d3d3d3;
+}
+.sbs-self-banner-add-form tr:last-child td:first-child{
+    border-top: 1px solid #FFF;
+}
+.sbs-self-banner-add ul{
+    float: right;
+}
+.btn-huy-tiep{
+    width: 90px;
+    text-align: center;
+    color: #FFF;
+    font-weight: 600;
+    font-family: Verdana;
+    font-size: 14px;
+    margin-left: 15px;
+}
+.btn-huy{
+    height: 32px;
+    line-height: 32px;
+    background: #696969;
+}
+.btn-tiep{
+    height: 40px;
+    line-height: 40px;
+    background: #4682a0;
+}
+.sbs-self-banner-add .btn-tiep{
+    position: relative;
+    top:-8px;
 }

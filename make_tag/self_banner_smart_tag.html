@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Adpia Affiliate Center</title>
+	<link rel="stylesheet" href="make_tag.css" />
+</head>
+<body>
+
+<div class="clear frame sbs-self-smart-tag">
+	<span>
+	Banner Rolling chỉ hiển thị 1 banner duy nhất và được thay đổi ngẫu nhiên sau mỗi lần truy cập (Refresh trình duyệt). Tỷ lệ
+	xuất hiện của banner Rolling phụ thuộc vào chỉ số Rate được thiết lập.
+	Banner Smart là banner hiển thị dưới dạng Slideshow, ưu điểm: hiển thị được tất cả các banner trong cùng 1 khu vực dưới
+	dạng Slideshow.<br />
+	Banner Smart có 2 dạng là <br />
+	1. Slideshow thông thường (chỉ hiện thị 1 banner 1 lúc và tuần tự xuất hiện kế tiếp nhau)<br />
+	2. Slideshow dạng danh sách sản phẩm (Hiện thị nhiều banner và chạy liên tục)<br />
+	</span>
+	
+	<table class="clear frame" cellspacing="0">
+		<thead>
+			<tr>
+				<th>LỰA CHỌN LOẠI BANNER</th>
+				<th>
+					<div class="custom-radio">
+						<input type="radio" name="smart" value="ALL" id="rolling">
+						<label for="rolling"><span></span>BANNER ROLLING</label>
+					</div>
+				</th>
+				<th>
+					<div class="custom-radio">
+						<input type="radio" name="smart" value="ALL" id="smart">
+						<label for="smart"><span></span>BANNER SMART</label>
+					</div>
+				</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td colspan="3">					
+					<div class="custom-checkbox">
+						<input type="checkbox" name="cbSave" id="cbSave"/>
+						<label for="cbSave">
+							<span></span>&nbsp;MỞ TRANG MỚI
+						</label>
+					</div>
+					<div class="custom-checkbox" style="margin-right:15px">
+						<input type="checkbox" name="cbxd" id="cbxd"/>
+						<label for="cbxd">
+							<span></span>&nbsp;XÁC ĐỊNH GIÁ TRỊ NGƯỜI DÙNG(u_id) :
+						</label>
+					</div>
+
+					<input type="text" name="u_id" value />
+					<input type="submit" value="TẠO TAG" />
+				</td>
+			</tr>
+			<tr>				
+				<td colspan="3">
+					TAG<br/><br/>
+					<textarea name="tag" cols="104" rows="5" class="simpleform3">blablaablaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</textarea>
+					<img src="img-sao-chep.png" alt="sao chep" onlick="copy_tag()" style="display:block; margin:0px auto;cursor:pointer;" />
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3">
+					XEM TRƯỚC<br /><br />
+					<img src="img-smart-xemtruoc.png" alt="" style="display:block; margin:0px auto;"  />
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+</body>
+</html>

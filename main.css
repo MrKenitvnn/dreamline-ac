@@ -1936,3 +1936,129 @@ input[type="checkbox"]:checked + label span {
     box-shadow: 0px 2px 2px #ededed;
     background: #1e7145 url('images/icon-excel-report-white.png') no-repeat left 10px center;
 }
+
+/**
+ * @date: 03-12-2015;
+ * continus
+ * at: self_banner_link;
+ */
+
+/**
+ * see Folder:
+ * TimTheoDichVu :: get_ad_by_default.css :: TODO continus
+ * make_tag
+ * make_tag_pop
+ * 
+ */
+
+ /**
+ * TODO note: add append;
+ *
+ */
+
+.sbs-self-table{
+    margin-top: 20px;
+    border:1px solid #cecece;
+    border-top: 3px solid #4682a0;
+    font-family: "Open Sans" sans-serif;
+    display: block;
+}
+.sbs-self-table thead tr{
+    height:72px;
+    background: #e0e0e0;
+    padding:0px;
+}
+.sbs-self-table thead tr th{
+    font-weight: 400;
+    font-family: Verdana;
+    margin-bottom: 1px;
+}
+.sbs-self-table tbody{
+
+}
+.sbs-self-table tbody td:first-child{
+    width: 230px;
+    margin-left: 20px;
+    display: block;
+}
+.sbs-self-table tbody td:nth-child(2){
+    width: 150px;
+}
+.sbs-self-table tbody td:nth-child(3){
+    width: 150px;
+}
+.sbs-self-table tbody td:nth-child(4){
+    width: 220px;
+}
+.sbs-self-table tbody td:nth-child(5){
+    width: 240px;
+}
+.sbs-self-table tbody td:last-child{
+    width: 120px;
+    margin-right: 20px;
+    display: block;
+    position: relative;
+    top:54px;
+}
+.sbs-self-table td{
+    text-align: center;
+}
+.sbs-self-table tbody td{
+    height: 68px;
+    border-bottom:1px solid #cecece;
+}
+.sbs-self-table tbody tr:last-child td{
+    border:none;
+}
+
+
+/**
+ * custom select box 2
+ */
+ .custom-select-box-2{
+    height: 36px;
+    line-height: 36px;
+    background: #FFF url('images/bg-custom-select-2.png') no-repeat;
+    background-position: right 10px center;
+ }
+ .custom-select-box-2 select{
+    padding-top: 0px;
+ }
+
+.custom-checkbox label span{
+    width: 16px;
+    height: 16px;
+    background: #FFF;
+    border:1px solid #bbbbbb;
+    border-radius: 0px;
+ }
+.custom-checkbox input[type="checkbox"]:checked + label span{
+    background: #FFF url('images/bg-custom-checkbox.png') no-repeat center;
+}
+/**
+ * cycle counter
+ */
+ .count-link{
+    width: 50px;
+    height:50px;
+    border-radius: 50%;
+    background: #FFF;
+    margin: 0px auto;
+    text-align: center;
+    line-height: 50px;
+    color: #25aef2;
+    font-size: 16px;
+}
+/**
+ * custom radio input
+ */
+ .custom-radio label span {
+    width: 24px;
+    height: 26px;
+    border:none !important;
+    /*background-color:none!important;*/
+    background: url('images/bg-radio-default.png') no-repeat center !important;
+ }
+.custom-radio input[type="radio"]:checked + label span{
+  background: url('images/bg-radio-checked.png') no-repeat center !important;  
+}
