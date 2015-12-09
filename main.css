@@ -1744,6 +1744,7 @@ td #merchant-item-percent{
     left:-20px;
     top:-2px;
     cursor: pointer;
+    text-align: center;
 }
 
 /**
@@ -2062,3 +2063,18 @@ input[type="checkbox"]:checked + label span {
 .custom-radio input[type="radio"]:checked + label span{
   background: url('images/bg-radio-checked.png') no-repeat center !important;  
 }
+
+
+
+
+
+
+/**
+ * plz add more
+
+ .btn-copy-link{
+    text-align: center;
+ }
+
+
+ **/
