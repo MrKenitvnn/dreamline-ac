@@ -541,7 +541,7 @@ section{
     float:left;
     font-size:22px; font-weight:bold; font-family:Arial;
 }
-#merchant-info-link{
+.merchant-info-link{
     color: #25AEF2;
     font-size:13px;
     text-decoration: underline;
@@ -558,12 +558,12 @@ section{
     height:80px;
 }
 .item-ok .merchant-info-img{
-    background: url('../../../images/dev/icon_connected.png') no-repeat;
+    background: url('http://ac.adpia.vn/images/dev/icon_connected.png') no-repeat;
 }
 .item-not .merchant-info-img{
-    background: url('../../../images/dev/icon_not_connect.png') no-repeat;
+    background: url('http://ac.adpia.vn/images/dev/icon_not_connect.png') no-repeat;
 }
-#merchant-info-description{
+.merchant-info-description{
     margin:5px 5px 5px 15px;
     padding:0px;
     font-weight:normal;
@@ -622,31 +622,31 @@ section{
     padding: 5px 0px 0px 10px;
     float:left;	
 }
-#merchant-item-name{	
+.merchant-item-name{	
     color: #232323;
     font-family:"Open Sans", sans-serif;
     font-size: 18px;
     margin: 0px auto;
 }
-#merchant-item-type{
+.merchant-item-type{
     color: #b3b3b3;
     font-family:"Open Sans", sans-serif;
     font-size: 14px;	
     font-weight:400;
 }
-#merchant-item-category{
+.merchant-item-category{
     color: #b3b3b3;
     font-size: 12px;
     font-family: openRegular;
     line-height:20px;
 }
-#merchant-cps-receive{
+.merchant-cps-receive{
     color: #A9A9A9;
     font-family:"Open Sans", sans-serif;
     font-size: 15px;	
     line-height:35px;
 }
-#merchant-item-percent{	
+.merchant-item-percent{	
     color: #5a5a5a;
     font-family:"Open Sans", sans-serif;
     font-size: 16px;
@@ -1940,13 +1940,12 @@ input[type="checkbox"]:checked + label span {
 
 /**
  * @date: 03-12-2015;
- * continus
  * at: self_banner_link;
  */
 
 /**
  * see Folder:
- * TimTheoDichVu :: get_ad_by_default.css :: TODO continus
+ * TimTheoDichVu :: get_ad_by_default.css
  * make_tag
  * make_tag_pop
  * 
@@ -1956,7 +1955,6 @@ input[type="checkbox"]:checked + label span {
  * TODO note: add append;
  *
  */
-
 .sbs-self-table{
     margin-top: 20px;
     border:1px solid #cecece;
@@ -2036,6 +2034,7 @@ input[type="checkbox"]:checked + label span {
 .custom-checkbox input[type="checkbox"]:checked + label span{
     background: #FFF url('images/bg-custom-checkbox.png') no-repeat center;
 }
+
 /**
  * cycle counter
  */
@@ -2050,6 +2049,7 @@ input[type="checkbox"]:checked + label span {
     color: #25aef2;
     font-size: 16px;
 }
+
 /**
  * custom radio input
  */
@@ -2060,13 +2060,10 @@ input[type="checkbox"]:checked + label span {
     /*background-color:none!important;*/
     background: url('images/bg-radio-default.png') no-repeat center !important;
  }
+
 .custom-radio input[type="radio"]:checked + label span{
   background: url('images/bg-radio-checked.png') no-repeat center !important;  
 }
-
-
-
-
 
 
 /**
@@ -2075,6 +2072,20 @@ input[type="checkbox"]:checked + label span {
  .btn-copy-link{
     text-align: center;
  }
-
-
  **/
+
+ /**
+  * TODO continus 23/12/2015
+  * add: CongThongTin
+  * add: /make_tag_pop/tao_tag.html
+  * add: /DangQuangCao/TimTheoMerchant/viewmerchant.html
+  */
+
+
+/**
+ * plz add and fix
+ */
+.mc-highligh-item>div:first-child a:first-child{
+    height: 100%;
+    margin-right: 20px;
+}

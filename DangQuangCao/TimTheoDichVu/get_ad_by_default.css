@@ -603,7 +603,6 @@ textarea {
 
 
 /**
- * TODO continus
  * link banner self
  * @url('/get_ad_by_self/self_banner_link')
  **/
@@ -759,4 +758,97 @@ textarea {
 .sbs-self-banner-add .btn-tiep{
     position: relative;
     top:-8px;
+}
+
+/**
+ * TODO continus
+ * standard link list
+ * @url ('/get_ad_by_default/standard_link_list/merchant_id/nology')
+ */
+.sbs-link-list-nav{
+    height: auto;
+    border-bottom:3px solid #ffba00;
+}
+.sbs-link-list-nav ul{
+    float: right;
+
+}
+.sbs-link-list-nav ul a{
+    display: block;
+    padding: 10px 20px 10px 20px;
+    font-weight: 600;
+    font-size: 14px;
+    color:#f2f2f2;
+}
+
+.sbs-link-list-nav ul li:nth-child(1) a{
+    background: #4cc035;
+}
+.sbs-link-list-nav ul li:nth-child(2) a{
+    background: #ffba00;
+}
+.sbs-link-list-nav ul li:nth-child(3) a{
+    background: #ae3acf;
+}
+.sbs-link-list-nav ul li.on a{
+    color: #FFF;
+    font-weight: bold;
+}
+.sbs-link-list-nav ul li{
+    position: relative;
+}
+.sbs-link-list-tbl{
+    border-collapse: collapse;
+    border:1px solid #cecece;
+    border-top: none;
+}
+.sbs-link-list-tbl thead th{
+    height: 70px;
+    line-height: 70px;
+    background: #e0e0e0;
+    text-align: left;
+    padding-left: 30px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    position: relative;
+}
+.sbs-link-list-tbl thead td{
+    height: 50px;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    border-bottom: 1px solid #cecece;
+}
+.sbs-link-list-tbl tbody tr{
+}
+.sbs-link-list-tbl tbody td{
+    text-align: center;
+    padding: 10px 20px 10px 20px;
+    border-bottom: 1px solid #cecece;
+}
+.sbs-link-list-tbl thead th:nth-child(1) .custom-select-box-2{
+    width:160px;
+    position: absolute;
+    top:16px;
+    left: 200px;
+    z-index: 2;
+}
+.sbs-link-list-tbl thead th:nth-child(1) select{
+    width: 160px;
+    position: relative;
+    top:-2px;
+}
+.sbs-link-list-tbl thead th:nth-child(2) .custom-select-box-2{
+    width:134px;
+    position: absolute;
+    top:16px;
+    left: 250px;
+    z-index: 2;
+}
+.sbs-link-list-tbl thead th:nth-child(2) select{
+    width: 134px;
+    position: relative;
+    top:-2px;
 }

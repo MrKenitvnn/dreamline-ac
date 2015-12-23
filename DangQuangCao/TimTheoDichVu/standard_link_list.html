@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>standard link list</title>
+	<link rel="stylesheet" href="get_ad_by_default.css" />
+	<link rel="stylesheet" href="../TimTheoMerchant/get_ad_by_merchant.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	<script >
+		$(document).ready(function(){
+		    var ll_nav_item = $('.sbs-link-list-nav ul li.on');
+		    var ll_nav_item_index = ll_nav_item.index();
+		    switch (ll_nav_item_index) {
+		    	case 0:
+		    		$('.sbs-link-list-nav').css('border-bottom-color',' #4cc035');
+		    		break;		    	
+		    	case 1:
+		    		$('.sbs-link-list-nav').css('border-bottom-color',' #ffba00');					
+					// that la vo van,
+					/*$('head').append('<style>.sbs-link-list-nav ul li.on:before{content: "";display: block;position: absolute;width: ' + ll_nav_item.width() +'px;height: 10px;background: #ff0000;top:-10px;}</style>');*/
+		    		break;		    	
+		    	case 2:
+		    		$('.sbs-link-list-nav').css('border-bottom-color',' #ae3acf');
+		    		break;
+		    }
+	    });
+	</script>
+</head>
+<body>
+
+	<div class="clear frame sbm-view-mer-info">
+		<img src="anh4.jpg" alt="img merchant" />
+		<div style="width:300px;">
+			<span>
+				Tên miền
+			</span>
+			<span>
+				<span style="color:#ff0000; font-weight:700">HELLOMAM</span>&nbsp;
+				(helloman)
+			</span>
+			<br />
+			<span>
+				Đường dẫn
+			</span>
+			<span>
+				http://hellomom.vn
+			</span>
+			<br />
+			<span>
+				Mục
+			</span>
+			<span>
+				Thực phẩm/Ăn uống
+			</span>
+		</div>
+		<div style="width:80px; text-align:center">
+			<img src="img-lienket.png" alt="img connected" />
+			<br />
+			<span>Hủy liên kết</span>
+		</div>
+		<span style="float:right; line-height:60px">
+			<span>Thời gian công nhận hiệu quảng cáo 
+			<span style="color:#3f464a; font-weight:700">30 </span>
+			<span style="color:#f61c1c; font-weight:700">Ngày</span>
+			</span>
+		</span>
+	</div>
+
+	<br/>
+
+	<div class="clear frame sbs-link-list-nav" style="height:34px;">
+		<span style="float:left">
+			<span style="font-size:16px; font-weight:bold">DỊCH VỤ CƠ BẢN: </span>
+			Loại link được cung cấp
+		</span>
+		
+		<ul>
+			<li><a href="#">LINK THƯỜNG</a></li>
+			<li class="on"><a href="#">LINK BANNER CHUẨN</a></li>
+			<li><a href="#">LINK CƠ BẢN</a></li>
+		</ul>
+	</div>
+
+	<table class="clear frame sbs-link-list-tbl" border="1" cellspacing="0">
+		<thead>
+			<tr>
+				<th colspan="2" style="width:460px;">
+					KÍCH THƯỚC BANNER
+					<div class="custom-select-box custom-select-box-2">
+						<select name="" id="">
+							<option value="">ABC 123</option>
+						</select>
+					</div>
+				</th>
+				<th style="padding-left:175px;">
+					BANNER
+					<div class="custom-select-box custom-select-box-2">
+						<select name="" id="">
+							<option value="">Image</option>
+						</select>
+					</div>
+				</th>
+				<th>
+					<span>Số lượng : 10.0000 link yeah</span>
+				</th>
+			</tr>
+			<tr>
+				<td>XEM TRƯỚC</td>
+				<td>NGÀY ĐĂNG</td>
+				<td>LINH CƠ BẢN</td>
+				<td>TẠO TÊN</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td style="width:150px;">
+					<a href="#" style="display:block">
+						<img src="anh-xem-truoc-blable.png" alt="xem coin card"  style="display:block" />
+					</a>
+				</td>
+				<td>25/07/2015</td>
+				<td class="cb-link-copy"><input type="text" style="width:250px;margin-left:150px" /> &nbsp;
+				<span class="btn-copy-link" onclick="copy_text(this.form.url_mattroist)">Copy</span>
+		        </td>
+				<td>
+					<a href="#" class="btn-tao-tag">TẠO TAG</a> 
+					<a href="#" class="btn-tao-tag" style="background:#d3d3d3; color:#000; margin-left:10px;">VIEW</a>
+				</td>
+			</tr>
+			<tr>
+				<td style="width:150px;">
+					<a href="#" style="display:block">
+						<img src="anh-xem-truoc-blable.png" alt="xem coin card"  style="display:block" />
+					</a>
+				</td>
+				<td>25/07/2015</td>
+				<td class="cb-link-copy"><input type="text" style="width:250px;margin-left:150px" /> &nbsp;
+				<span class="btn-copy-link" onclick="copy_text(this.form.url_mattroist)">Copy</span>
+		        </td>
+				<td>
+					<a href="#" class="btn-tao-tag">TẠO TAG</a> 
+					<a href="#" class="btn-tao-tag" style="background:#d3d3d3; color:#000; margin-left:10px;">VIEW</a>
+				</td>
+			</tr>
+			<tr>
+				<td style="width:150px;">
+					<a href="#" style="display:block">
+						<img src="anh-xem-truoc-blable.png" alt="xem coin card"  style="display:block" />
+					</a>
+				</td>
+				<td>25/07/2015</td>
+				<td class="cb-link-copy"><input type="text" style="width:250px;margin-left:150px" /> &nbsp;
+				<span class="btn-copy-link" onclick="copy_text(this.form.url_mattroist)">Copy</span>
+		        </td>
+				<td>
+					<a href="#" class="btn-tao-tag">TẠO TAG</a> 
+					<a href="#" class="btn-tao-tag" style="background:#d3d3d3; color:#000; margin-left:10px;">VIEW</a>
+				</td>
+			</tr>
+			<tr>
+				<td style="width:150px;">
+					<a href="#" style="display:block">
+						<img src="anh-xem-truoc-blable.png" alt="xem coin card"  style="display:block" />
+					</a>
+				</td>
+				<td>25/07/2015</td>
+				<td class="cb-link-copy"><input type="text" style="width:250px;margin-left:150px" /> &nbsp;
+				<span class="btn-copy-link" onclick="copy_text(this.form.url_mattroist)">Copy</span>
+		        </td>
+				<td>
+					<a href="#" class="btn-tao-tag">TẠO TAG</a> 
+					<a href="#" class="btn-tao-tag" style="background:#d3d3d3; color:#000; margin-left:10px;">VIEW</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	
+</body>
+</html>
