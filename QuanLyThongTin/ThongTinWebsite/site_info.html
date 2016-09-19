@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="../mana_info.css">
+</head>
+<body>
+	
+	<div class="clear wrapper" style="background:#e1e3e4;overflow:hidden">
+
+		<!-- Menu Left -->
+		<div class="report-menu-left mana-info-left" >
+			<h2 class="on">THÔNG TIN CÁ NHÂN</h2>
+			<ul class="mana-my-info-ul">
+				<li><a href="#">SOẠN THƯ</a></li>
+				<li><a href="#">Hồ sơ cá nhân</a></li>
+				<li><a href="#">Hộp thư đến</a></li>
+				<li><a href="#">Hộp thư đi</a></li>
+				<li><a href="#">Hộp thư nháp</a></li>
+			</ul>
+			<hr/> <div class="clear"></div>
+			<h2>THÔNG TIN WEBSITE</h2>
+			<ul>
+				<li class="on"><a href="#">Thông tin website</a></li>
+				<li><a href="#">Thông tin marketing</a></li>
+				<li><a href="#">Thông tin kết quả</a></li>
+			</ul>
+			<a href="#">Đăng xuất tài khoản <img style="margin-left:10px" src="http://devac.adpia.vn:8080/images/dev/icon-logout.png" alt=""></a>
+		</div>
+
+		<!-- Content right -->
+		<div class="report-content-right">			
+			<div class="my-info-header">
+				<h2>Thông tin website</h2>
+				<span> Vui lòng chọn website. (Có thể đăng ký bổ sung facebook cá nhân, fanpage, blog và website cá nhân)</span>	
+			</div>
+
+			<!--content-->
+			<div class="clear site-info-content">
+
+				<div class="site-info-add-more">
+					<div class="custom-select-box">
+						<select name="aff_id" id="aff_id">
+							<option>facebook</option>
+						</select>
+					</div>	
+					<a href="#" title="bo sung website">Bổ sung website</a>
+				</div><div class="clear"></div>
+
+				<ul class="site-info-nav-ul">
+					<li class="on"><a href="#" title="">THÔNG TIN WEBSITE</a></li>
+					<li><a href="#" title="">THÔNG TIN MARKETING</a></li>
+					<li><a href="#" title="">NHẬN THÔNG TIN KẾT QUẢ</a></li>
+				</ul>
+
+				<div style="" class="site-info-div2 site-info-div2-left">
+					<span class="site-info-title">Site Type</span>	
+					<hr />
+					<div class="clear" style="margin:30px 0px 43px 30px">
+						<input type="radio" name="subs_status" value="ALL" id="type_website" />
+			            	<label for="type_website"><span></span>Website</label>&nbsp;&nbsp;
+
+						<input type="radio" name="subs_status" value="ALL" id="type_mobile" />
+			            	<label for="type_mobile"><span></span>Mobile App (Android, IOS)</label>
+		            	</div>
+
+		            	<span class="site-info-title">Xử lý lỗi của link</span>
+					<hr style="width:270px" />
+
+					<div class="clear" style="margin:70px 0px 30px 30px">
+						<input type="radio" name="subs_status" value="ALL" id="type_mobile" />
+			            	<label for="type_mobile">
+			            		<span></span>Không tạo lập (foward tới trang chủ bị lỗi của Adpia)
+			            	</label><br/><br/>
+
+			            	<input type="radio" name="subs_status" value="ALL" id="type_mobile" />
+			            	<label for="type_mobile"><span></span>Forward tới link cơ bản của Merchant tương ứng (nếu là link của người dùng thì forward tới đường dẫn đích)</label><br/><br/>
+
+						<input type="radio" name="subs_status" value="ALL" id="type_mobile" />
+			            	<label for="type_mobile"><span></span>Nhập trực tiếp đường dẫn sẽ forward tới</label>
+						<br/><br/>
+
+						<input type="text" style="width:330px" />
+
+					</div>
+				</div>
+				<div class="site-info-div2 site-info-div2-right">
+					<span class="site-info-title">Tên miền</span>	
+					<hr />
+					<div class="clear site-info-ten-mien">						
+						<input type="text" />&nbsp;
+						<span>(A100000137)</span>
+		            	</div><div class="clear"></div>
+
+		            	<span class="site-info-title">Category</span>
+					<hr /><div class="clear"></div>
+					<div class="clear site-info-category">
+						<input type="text" disabled="disable" />
+						<input type="button" value="Chọn mục" onclick="open_category_popup('form1')" class="simplebutton2">
+					</div>
+					<div class="clear"></div>
+
+		            	<span class="site-info-title">Đường dẫn</span>
+					<hr style="width:315px" /><div class="clear"></div>				
+					
+					<input type="text" style="margin:10px 30px;width:200px" /><div class="clear"></div>
+
+					<span style="width:350px;text-align:center;display:block;margin:0px auto;font-size:13px;">
+						Hãy gửi mail đến địa chỉ
+ 						<a href="#" title="" style="color:#2baef1;float:none;">affiliate@adpia.vn </a>
+ 						khi muốn thay đổi
+						<span style="color:#ff0000">đường dẫn website.</span>
+ 					</span>
+				</div><div class="clear"></div>
+
+				<div class="clear site-info-bottom">
+					<hr /> 
+					<ul class="button-bottom-ul">
+						<li><a href="#" title="">THAY ĐỔI</a></li>
+						<li><a href="#" title="">XÓA</a></li>
+					</ul>
+					<hr />
+				</div>
+			</div><!-- end content-->
+		</div>
+	</div>
+</body>
+</html>

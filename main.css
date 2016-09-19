@@ -8,18 +8,18 @@ body{
 }
 @font-face{
     font-family: openLight;
-    src: url(../../fonts/opensans-light-webfont.woff);
+    src: url(fonts/opensans-light-webfont.woff);
 }
 @font-face{
     font-family: openRegular;
-    src: url(../../fonts/opensans-regular-webfont.woff);
+    src: url(fonts/opensans-regular-webfont.woff);
 }
 @font-face{
     font-family: openSemiBold;
-    src: url(../../fonts/opensans-semibold-webfont.woff);
+    src: url(fonts/opensans-semibold-webfont.woff);
 }
 
-a, p, span, h2,label{
+a, p, span, h2,label, td{
     font-family: "Open Sans", sans-serif;
 }
 p{
@@ -541,7 +541,7 @@ section{
     float:left;
     font-size:22px; font-weight:bold; font-family:Arial;
 }
-#merchant-info-link{
+.merchant-info-link{
     color: #25AEF2;
     font-size:13px;
     text-decoration: underline;
@@ -558,12 +558,12 @@ section{
     height:80px;
 }
 .item-ok .merchant-info-img{
-    background: url('../../../images/dev/icon_connected.png') no-repeat;
+    background: url('http://ac.adpia.vn/images/dev/icon_connected.png') no-repeat;
 }
 .item-not .merchant-info-img{
-    background: url('../../../images/dev/icon_not_connect.png') no-repeat;
+    background: url('http://ac.adpia.vn/images/dev/icon_not_connect.png') no-repeat;
 }
-#merchant-info-description{
+.merchant-info-description{
     margin:5px 5px 5px 15px;
     padding:0px;
     font-weight:normal;
@@ -622,31 +622,31 @@ section{
     padding: 5px 0px 0px 10px;
     float:left;	
 }
-#merchant-item-name{	
+.merchant-item-name{	
     color: #232323;
     font-family:"Open Sans", sans-serif;
     font-size: 18px;
     margin: 0px auto;
 }
-#merchant-item-type{
+.merchant-item-type{
     color: #b3b3b3;
     font-family:"Open Sans", sans-serif;
     font-size: 14px;	
     font-weight:400;
 }
-#merchant-item-category{
+.merchant-item-category{
     color: #b3b3b3;
     font-size: 12px;
     font-family: openRegular;
     line-height:20px;
 }
-#merchant-cps-receive{
+.merchant-cps-receive{
     color: #A9A9A9;
     font-family:"Open Sans", sans-serif;
     font-size: 15px;	
     line-height:35px;
 }
-#merchant-item-percent{	
+.merchant-item-percent{	
     color: #5a5a5a;
     font-family:"Open Sans", sans-serif;
     font-size: 16px;
@@ -1380,9 +1380,10 @@ footer h2{
     float:left;
 }
 .custom-select-box{
-    width:265px;
+    width:255px;
     height:44px;
-    background: url('images/dev/bg_custom_select_box.png') !important;
+    background: url('images/arrow-selectbox-down.png') no-repeat;
+    background-position: right 10px center; 
 }
 .custom-select-box:nth-child(3),.custom-select-box:nth-child(4){
     margin-top:45px;
@@ -1743,6 +1744,7 @@ td #merchant-item-percent{
     left:-20px;
     top:-2px;
     cursor: pointer;
+    text-align: center;
 }
 
 /**
@@ -1853,4 +1855,237 @@ input[type="checkbox"]:checked + label span {
 /** end custom checkbox **/
 
 
- /******************************/
+ /*************** NOTE ***************/
+.custom-select-box{
+    width:255px;
+    height:44px;
+    line-height: 42px;
+    border: 1px solid #d7d7d7;
+    border-radius: 30px 30px 30px 30px;
+    background: url('images/arrow-selectbox-down.png') no-repeat;
+    background-position: right 10px center; 
+}
+
+.report-menu-left{
+    width: 18%;
+    float: left;
+    color: #000;
+    overflow: hidden;
+}
+.report-menu-left h2{
+    color: #000;
+    font-size: 20px;
+    font-weight: 400;
+    padding-left: 20%;
+}
+.report-menu-left h2:first-child{
+    margin-top: 20px;
+}
+.report-menu-left h2.on{
+    color: #2baef1;
+    padding-left: 18%;
+    border-left: 5px solid #2baef1;
+}
+.report-menu-left ul{
+    margin-left: 20%;
+    margin-top: 15px;
+}
+.report-menu-left ul li{
+    width: 80%;
+    padding-left: 15px;
+}
+.report-menu-left ul li:hover,
+.report-menu-left ul li.on{
+    background: #FFF;
+}
+.report-menu-left hr{
+    width: 80%;
+    margin: 10%;
+    border-top: 1px solid #b8b8b8;
+    border-bottom: 1px solid #FFF;
+}
+.report-menu-left ul li a{
+    font-size: 16px;
+    margin: 15px 0px 15px 0px;
+    display: block;
+}
+
+.report-content-right{
+    width: 80%;
+    padding: 1%;
+    padding-top: 40px;
+    margin: 0px auto;
+    float: left;
+    overflow:hidden;
+    background: #FFF;
+}
+.report-content-right h2{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: openRegular;
+}
+
+.btn-save-by-excel{
+    width: 185px;
+    padding-right: 20px;
+    text-align: right;
+    height: 44px;
+    line-height: 44px;
+    border-radius: 30px;
+    color: #FFF;
+    font-size:16px;
+    box-shadow: 0px 2px 2px #ededed;
+    background: #1e7145 url('images/icon-excel-report-white.png') no-repeat left 10px center;
+}
+
+/**
+ * @date: 03-12-2015;
+ * at: self_banner_link;
+ */
+
+/**
+ * see Folder:
+ * TimTheoDichVu :: get_ad_by_default.css
+ * make_tag
+ * make_tag_pop
+ * 
+ */
+
+ /**
+ * TODO note: add append;
+ *
+ */
+.sbs-self-table{
+    margin-top: 20px;
+    border:1px solid #cecece;
+    border-top: 3px solid #4682a0;
+    font-family: "Open Sans" sans-serif;
+    display: block;
+}
+.sbs-self-table thead tr{
+    height:72px;
+    background: #e0e0e0;
+    padding:0px;
+}
+.sbs-self-table thead tr th{
+    font-weight: 400;
+    font-family: Verdana;
+    margin-bottom: 1px;
+}
+.sbs-self-table tbody{
+
+}
+.sbs-self-table tbody td:first-child{
+    width: 230px;
+    margin-left: 20px;
+    display: block;
+}
+.sbs-self-table tbody td:nth-child(2){
+    width: 150px;
+}
+.sbs-self-table tbody td:nth-child(3){
+    width: 150px;
+}
+.sbs-self-table tbody td:nth-child(4){
+    width: 220px;
+}
+.sbs-self-table tbody td:nth-child(5){
+    width: 240px;
+}
+.sbs-self-table tbody td:last-child{
+    width: 120px;
+    margin-right: 20px;
+    display: block;
+    position: relative;
+    top:54px;
+}
+.sbs-self-table td{
+    text-align: center;
+}
+.sbs-self-table tbody td{
+    height: 68px;
+    border-bottom:1px solid #cecece;
+}
+.sbs-self-table tbody tr:last-child td{
+    border:none;
+}
+
+
+/**
+ * custom select box 2
+ */
+ .custom-select-box-2{
+    height: 36px;
+    line-height: 36px;
+    background: #FFF url('images/bg-custom-select-2.png') no-repeat;
+    background-position: right 10px center;
+ }
+ .custom-select-box-2 select{
+    padding-top: 0px;
+ }
+
+.custom-checkbox label span{
+    width: 16px;
+    height: 16px;
+    background: #FFF;
+    border:1px solid #bbbbbb;
+    border-radius: 0px;
+ }
+.custom-checkbox input[type="checkbox"]:checked + label span{
+    background: #FFF url('images/bg-custom-checkbox.png') no-repeat center;
+}
+
+/**
+ * cycle counter
+ */
+ .count-link{
+    width: 50px;
+    height:50px;
+    border-radius: 50%;
+    background: #FFF;
+    margin: 0px auto;
+    text-align: center;
+    line-height: 50px;
+    color: #25aef2;
+    font-size: 16px;
+}
+
+/**
+ * custom radio input
+ */
+ .custom-radio label span {
+    width: 24px;
+    height: 26px;
+    border:none !important;
+    /*background-color:none!important;*/
+    background: url('images/bg-radio-default.png') no-repeat center !important;
+ }
+
+.custom-radio input[type="radio"]:checked + label span{
+  background: url('images/bg-radio-checked.png') no-repeat center !important;  
+}
+
+
+/**
+ * plz add more
+
+ .btn-copy-link{
+    text-align: center;
+ }
+ **/
+
+ /**
+  * TODO continus 23/12/2015
+  * add: CongThongTin
+  * add: /make_tag_pop/tao_tag.html
+  * add: /DangQuangCao/TimTheoMerchant/viewmerchant.html
+  */
+
+
+/**
+ * plz add and fix
+ */
+.mc-highligh-item>div:first-child a:first-child{
+    height: 100%;
+    margin-right: 20px;
+}
